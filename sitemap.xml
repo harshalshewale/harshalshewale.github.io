@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://seleniumpoint.com/</loc>
+  <lastmod>2019-04-23T04:13:58+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://seleniumpoint.com/Selenium-Beginner-Course/</loc>
+  <lastmod>2019-04-23T04:13:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://seleniumpoint.com/Setup-Firebug-Fire-Path-XPath-Checker/</loc>
+  <lastmod>2019-04-23T04:13:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://seleniumpoint.com/Get-Tooltip-Text-Using-Selenium-WebDriver/</loc>
+  <lastmod>2019-04-23T04:13:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://seleniumpoint.com/Print-Table-Data-Using-Selenium-WebDriver/</loc>
+  <lastmod>2019-04-23T04:13:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://seleniumpoint.com/Print-All-Web-Page-Links-using-Selenium-WebDriver/</loc>
+  <lastmod>2019-04-23T04:13:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://seleniumpoint.com/Alerts-Handling-using-Selenium-WebDriver/</loc>
+  <lastmod>2019-04-23T04:13:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://seleniumpoint.com/Frame-Handling-Using-Selenium-WebDriver/</loc>
+  <lastmod>2019-04-23T04:13:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://seleniumpoint.com/New-Tab-Window-handling-using-Selenium-WebDriver/</loc>
+  <lastmod>2019-04-23T04:13:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://seleniumpoint.com/Window-handling-using-Selenium-WebDriver/</loc>
+  <lastmod>2019-04-23T04:13:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://seleniumpoint.com/Select-Dropdown-values/</loc>
+  <lastmod>2019-04-23T04:13:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://seleniumpoint.com/Selenium-WebDriver-Wait/</loc>
+  <lastmod>2019-04-23T04:13:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://seleniumpoint.com/page/2/</loc>
+  <lastmod>2019-04-23T04:13:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://seleniumpoint.com/categories/Selenium/</loc>
+  <lastmod>2019-04-23T04:13:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://seleniumpoint.com/tags/Selenium/</loc>
+  <lastmod>2019-04-23T04:13:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://seleniumpoint.com/archives/2019/04/</loc>
+  <lastmod>2019-04-23T04:13:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://seleniumpoint.com/First-Selenium-Script/</loc>
+  <lastmod>2019-04-23T04:13:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seleniumpoint.com/Selenium-Scripts-with-All-browsers/</loc>
+  <lastmod>2019-04-23T04:13:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seleniumpoint.com/Locators-in-Selenium-WebDriver/</loc>
+  <lastmod>2019-04-23T04:13:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seleniumpoint.com/How-to-set-up-Selenium-WebDriver-Environment/</loc>
+  <lastmod>2019-04-23T04:13:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seleniumpoint.com/Introduction-IDE-RC-WebDriver/</loc>
+  <lastmod>2019-04-23T04:13:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seleniumpoint.com/archives/2019/04/page/2/</loc>
+  <lastmod>2019-04-23T04:13:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
