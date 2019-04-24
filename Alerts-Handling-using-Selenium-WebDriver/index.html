@@ -8,6 +8,7 @@
 
 
     <meta name="description" content="Alerts Handling using Selenium WebDriverFor handling alerts on web page, Selenium provides four methods:  1. accept()  To accept the alert on web page 2. dismiss()  To dismiss the alert on web page">
+<meta name="keywords" content="Selenium">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Alerts Handling using Selenium WebDriver">
 <meta property="og:url" content="http://seleniumpoint.com/Alerts-Handling-using-Selenium-WebDriver/index.html">
@@ -15,7 +16,7 @@
 <meta property="og:description" content="Alerts Handling using Selenium WebDriverFor handling alerts on web page, Selenium provides four methods:  1. accept()  To accept the alert on web page 2. dismiss()  To dismiss the alert on web page">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://seleniumpoint.com/images/og_image.png">
-<meta property="og:updated_time" content="2019-04-23T02:04:13.382Z">
+<meta property="og:updated_time" content="2019-04-23T07:50:18.697Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Alerts Handling using Selenium WebDriver">
 <meta name="twitter:description" content="Alerts Handling using Selenium WebDriverFor handling alerts on web page, Selenium provides four methods:  1. accept()  To accept the alert on web page 2. dismiss()  To dismiss the alert on web page">
@@ -146,13 +147,17 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-04-23T02:03:57.000Z">2019-04-23</time>
+                <time class="level-item has-text-grey" datetime="2019-04-23T02:03:00.000Z">2019-04-23</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/Selenium/">Selenium</a>
+                </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    2 minutes read (About 254 words)
+                    2 minutes read (About 249 words)
                 </span>
                 
                 
@@ -175,62 +180,18 @@
 <li><strong>4. sendKeys()</strong>  To send some text to the alert on web page</li>
 </ul>
 <p>Find below image and selenium code for the same</p>
-<p><img src="https://seleniumpoint.com/images/alert.png" alt="selenium webdriver window handling">  </p>
-<pre><code>        package scripts;
+<p><img src="https://seleniumpoint.com/images/alert.png" alt="selenium webdriver window handling"></p>
+<figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">package</span> scripts;</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">import</span> org.openqa.selenium.Alert;</span><br><span class="line"><span class="hljs-keyword">import</span> org.openqa.selenium.By;</span><br><span class="line"><span class="hljs-keyword">import</span> org.openqa.selenium.WebDriver;</span><br><span class="line"><span class="hljs-keyword">import</span> org.openqa.selenium.chrome.ChromeDriver;</span><br><span class="line"><span class="hljs-keyword">import</span> org.openqa.selenium.firefox.FirefoxDriver;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">alertHandling</span> </span>&#123;</span><br><span class="line"></span><br><span class="line"> <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> InterruptedException </span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//set Chromedriver path for Chrome browser</span></span><br><span class="line">  System.setProperty(<span class="hljs-string">"webdriver.chrome.driver"</span>, <span class="hljs-string">"C:\\harshal personal\\selenium\\chromedriver.exe"</span>);</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//create WebDriver object for Chrome</span></span><br><span class="line">  WebDriver driver = <span class="hljs-keyword">new</span> ChromeDriver();</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//open URL</span></span><br><span class="line">  driver.get(<span class="hljs-string">"https://www.seleniumpoint.com/testwebsite.php"</span>);</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//maximize the window</span></span><br><span class="line">  driver.manage().window().maximize();</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//login to test web site</span></span><br><span class="line">  driver.findElement(By.id(<span class="hljs-string">"remail"</span>)).sendKeys(<span class="hljs-string">"test@seleniumpoint.com "</span>);</span><br><span class="line">  driver.findElement(By.id(<span class="hljs-string">"rpassword"</span>)).sendKeys(<span class="hljs-string">"test@123"</span>);</span><br><span class="line">  driver.findElement(By.id(<span class="hljs-string">"rsubmit"</span>)).click();</span><br><span class="line"></span><br><span class="line">  Thread.sleep(<span class="hljs-number">3000</span>);</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//click on View link of third product to open window: Car Seat</span></span><br><span class="line">  driver.findElement(By.xpath(<span class="hljs-string">"//div[@class='product4View']/a"</span>)).click();</span><br><span class="line"></span><br><span class="line">  Thread.sleep(<span class="hljs-number">3000</span>);</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//get alert text</span></span><br><span class="line">  String alertText = driver.switchTo().alert().getText();</span><br><span class="line">  System.out.println(<span class="hljs-string">"Alert Text is :"</span> + alertText);</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//Send value to alert</span></span><br><span class="line">  driver.switchTo().alert().sendKeys(<span class="hljs-string">"01harshal.shewale@gmail.com"</span>);</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//accept alert</span></span><br><span class="line">  driver.switchTo().alert().accept();</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//dismiss alert</span></span><br><span class="line">  <span class="hljs-comment">//driver.switchTo().alert().dismiss();</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-        import org.openqa.selenium.Alert;
-        import org.openqa.selenium.By;
-        import org.openqa.selenium.WebDriver;
-        import org.openqa.selenium.chrome.ChromeDriver;
-        import org.openqa.selenium.firefox.FirefoxDriver;
-
-
-        public class alertHandling {
-
-        public static void main(String[] args) throws InterruptedException {
-
-        //set Chromedriver path for Chrome browser
-        System.setProperty(&quot;webdriver.chrome.driver&quot;,&quot;C:\\harshal personal\\selenium\\chromedriver.exe&quot;);
-
-        //create WebDriver object for Chrome
-        WebDriver driver=new ChromeDriver();
-
-        //open URL
-        driver.get(&quot;[http://www.seleniumpoint.com/testwebsite.php](http://www.seleniumpoint.com/testwebsite.php)&quot;);
-
-        //maximize the window
-        driver.manage().window().maximize();
-
-        //login to test web site
-        driver.findElement(By.id(&quot;remail&quot;)).sendKeys(&quot;test@seleniumpoint.com &quot;);
-        driver.findElement(By.id(&quot;rpassword&quot;)).sendKeys(&quot;test@123&quot;);
-        driver.findElement(By.id(&quot;rsubmit&quot;)).click();
-
-        Thread.sleep(3000);
-
-        //click on View link of third product to open window: Car Seat
-        driver.findElement(By.xpath(&quot;//div[@class=&apos;product4View&apos;]/a&quot;)).click();
-
-        Thread.sleep(3000);
-
-        //get alert text
-        String alertText=driver.switchTo().alert().getText();
-        System.out.println(&quot;Alert Text is :&quot; + alertText);
-
-        //Send value to alert
-        driver.switchTo().alert().sendKeys(&quot;01harshal.shewale@gmail.com&quot;);
-
-        //accept alert
-        driver.switchTo().alert().accept();
-
-        //dismiss alert
-        //driver.switchTo().alert().dismiss();
-
-
-    }
-
-}
-</code></pre>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/tags/Selenium/">Selenium</a>
+                </div>
+            </div>
         </div>
         
         
@@ -454,7 +415,7 @@
                 <span class="level-item">Selenium</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">1</span>
+                <span class="level-item tag">15</span>
             </span>
         </a></li>
             </ul>
@@ -485,7 +446,7 @@
         
         <article class="media">
             
-            <a href="/Setup-Firebug-Fire-Path-XPath-Checker/" class="media-left">
+            <a href="/install-firebug-firepath-xpathchecker-firefox-addons-for-selenium-new/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/images/thumbnail.svg" alt="Setup Firebug, Fire Path, XPath Checker">
                 </p>
@@ -493,10 +454,10 @@
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T03:30:54.000Z">2019-04-23</time></div>
-                    <a href="/Setup-Firebug-Fire-Path-XPath-Checker/" class="has-link-black-ter is-size-6">Setup Firebug, Fire Path, XPath Checker</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T03:30:00.000Z">2019-04-23</time></div>
+                    <a href="/install-firebug-firepath-xpathchecker-firefox-addons-for-selenium-new/" class="has-link-black-ter is-size-6">Setup Firebug, Fire Path, XPath Checker</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/Selenium/">Selenium</a>
                     </p>
                 </div>
             </div>
@@ -512,10 +473,10 @@
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T02:56:39.000Z">2019-04-23</time></div>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T02:56:00.000Z">2019-04-23</time></div>
                     <a href="/Get-Tooltip-Text-Using-Selenium-WebDriver/" class="has-link-black-ter is-size-6">Get Tooltip Text Using Selenium WebDriver</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/Selenium/">Selenium</a>
                     </p>
                 </div>
             </div>
@@ -531,10 +492,10 @@
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T02:55:15.000Z">2019-04-23</time></div>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T02:55:00.000Z">2019-04-23</time></div>
                     <a href="/Print-Table-Data-Using-Selenium-WebDriver/" class="has-link-black-ter is-size-6">Print Table Data Using Selenium WebDriver</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/Selenium/">Selenium</a>
                     </p>
                 </div>
             </div>
@@ -550,10 +511,10 @@
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T02:50:28.000Z">2019-04-23</time></div>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T02:50:00.000Z">2019-04-23</time></div>
                     <a href="/Print-All-Web-Page-Links-using-Selenium-WebDriver/" class="has-link-black-ter is-size-6">Print All Web Page Links using Selenium WebDriver</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/Selenium/">Selenium</a>
                     </p>
                 </div>
             </div>
@@ -569,10 +530,10 @@
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T02:03:57.000Z">2019-04-23</time></div>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T02:03:00.000Z">2019-04-23</time></div>
                     <a href="/Alerts-Handling-using-Selenium-WebDriver/" class="has-link-black-ter is-size-6">Alerts Handling using Selenium WebDriver</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/Selenium/">Selenium</a>
                     </p>
                 </div>
             </div>
@@ -617,7 +578,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/Selenium/">
                         <span class="tag">Selenium</span>
-                        <span class="tag is-grey">1</span>
+                        <span class="tag is-grey">15</span>
                     </a>
                 </div>
                 
@@ -646,7 +607,7 @@
         
         <article class="media">
             
-            <a href="/Setup-Firebug-Fire-Path-XPath-Checker/" class="media-left">
+            <a href="/install-firebug-firepath-xpathchecker-firefox-addons-for-selenium-new/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/images/thumbnail.svg" alt="Setup Firebug, Fire Path, XPath Checker">
                 </p>
@@ -654,10 +615,10 @@
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T03:30:54.000Z">2019-04-23</time></div>
-                    <a href="/Setup-Firebug-Fire-Path-XPath-Checker/" class="has-link-black-ter is-size-6">Setup Firebug, Fire Path, XPath Checker</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T03:30:00.000Z">2019-04-23</time></div>
+                    <a href="/install-firebug-firepath-xpathchecker-firefox-addons-for-selenium-new/" class="has-link-black-ter is-size-6">Setup Firebug, Fire Path, XPath Checker</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/Selenium/">Selenium</a>
                     </p>
                 </div>
             </div>
@@ -673,10 +634,10 @@
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T02:56:39.000Z">2019-04-23</time></div>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T02:56:00.000Z">2019-04-23</time></div>
                     <a href="/Get-Tooltip-Text-Using-Selenium-WebDriver/" class="has-link-black-ter is-size-6">Get Tooltip Text Using Selenium WebDriver</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/Selenium/">Selenium</a>
                     </p>
                 </div>
             </div>
@@ -692,10 +653,10 @@
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T02:55:15.000Z">2019-04-23</time></div>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T02:55:00.000Z">2019-04-23</time></div>
                     <a href="/Print-Table-Data-Using-Selenium-WebDriver/" class="has-link-black-ter is-size-6">Print Table Data Using Selenium WebDriver</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/Selenium/">Selenium</a>
                     </p>
                 </div>
             </div>
@@ -711,10 +672,10 @@
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T02:50:28.000Z">2019-04-23</time></div>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T02:50:00.000Z">2019-04-23</time></div>
                     <a href="/Print-All-Web-Page-Links-using-Selenium-WebDriver/" class="has-link-black-ter is-size-6">Print All Web Page Links using Selenium WebDriver</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/Selenium/">Selenium</a>
                     </p>
                 </div>
             </div>
@@ -730,10 +691,10 @@
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T02:03:57.000Z">2019-04-23</time></div>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T02:03:00.000Z">2019-04-23</time></div>
                     <a href="/Alerts-Handling-using-Selenium-WebDriver/" class="has-link-black-ter is-size-6">Alerts Handling using Selenium WebDriver</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/Selenium/">Selenium</a>
                     </p>
                 </div>
             </div>
@@ -778,7 +739,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/Selenium/">
                         <span class="tag">Selenium</span>
-                        <span class="tag is-grey">1</span>
+                        <span class="tag is-grey">15</span>
                     </a>
                 </div>
                 
