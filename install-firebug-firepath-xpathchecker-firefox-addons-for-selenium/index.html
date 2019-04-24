@@ -2,24 +2,24 @@
 <html lang="en">
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-<title> Select Dropdown values using Selenium WebDriver - Hexo</title>
+<title>Setup Firebug, Fire Path, XPath Checker - Hexo</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
-    <meta name="description" content="Select Dropdown valuesSelenium WebDriver provides n number of inbuilt methods to perform actions on appliaction under test. For selecting dropdown values, selenium provides below three methods:  1.">
+    <meta name="description" content="Setup Firebug, Fire Path, XPath CheckerSelenium script is nothing but identify elements (text,text box, links, buttons, checkbox, windows etc.) on webpage and perform operations in order to automate i">
 <meta name="keywords" content="Selenium">
 <meta property="og:type" content="article">
-<meta property="og:title" content=" Select Dropdown values using Selenium WebDriver">
-<meta property="og:url" content="http://seleniumpoint.com/Select-Dropdown-values/index.html">
+<meta property="og:title" content="Setup Firebug, Fire Path, XPath Checker">
+<meta property="og:url" content="http://seleniumpoint.com/install-firebug-firepath-xpathchecker-firefox-addons-for-selenium/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Select Dropdown valuesSelenium WebDriver provides n number of inbuilt methods to perform actions on appliaction under test. For selecting dropdown values, selenium provides below three methods:  1.">
+<meta property="og:description" content="Setup Firebug, Fire Path, XPath CheckerSelenium script is nothing but identify elements (text,text box, links, buttons, checkbox, windows etc.) on webpage and perform operations in order to automate i">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://seleniumpoint.com/images/og_image.png">
-<meta property="og:updated_time" content="2019-04-23T07:48:44.965Z">
+<meta property="og:updated_time" content="2019-04-24T04:08:49.459Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content=" Select Dropdown values using Selenium WebDriver">
-<meta name="twitter:description" content="Select Dropdown valuesSelenium WebDriver provides n number of inbuilt methods to perform actions on appliaction under test. For selecting dropdown values, selenium provides below three methods:  1.">
+<meta name="twitter:title" content="Setup Firebug, Fire Path, XPath Checker">
+<meta name="twitter:description" content="Setup Firebug, Fire Path, XPath CheckerSelenium script is nothing but identify elements (text,text box, links, buttons, checkbox, windows etc.) on webpage and perform operations in order to automate i">
 <meta name="twitter:image" content="http://seleniumpoint.com/images/og_image.png">
 
 
@@ -94,7 +94,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt=" Select Dropdown values using Selenium WebDriver" height="28">
+                <img src="/images/logo.svg" alt="Setup Firebug, Fire Path, XPath Checker" height="28">
             
             </a>
         </div>
@@ -147,7 +147,7 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-04-23T01:54:00.000Z">2019-04-23</time>
+                <time class="level-item has-text-grey" datetime="2019-04-23T03:30:00.000Z">2019-04-23</time>
                 
                 <div class="level-item">
                 <a class="has-link-grey -link" href="/categories/Selenium/">Selenium</a>
@@ -157,7 +157,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    2 minutes read (About 240 words)
+                    2 minutes read (About 304 words)
                 </span>
                 
                 
@@ -166,21 +166,26 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                 Select Dropdown values using Selenium WebDriver
+                Setup Firebug, Fire Path, XPath Checker
             
         </h1>
         <div class="content">
-            <iframe width="100%" height="400" src="https://www.youtube.com/embed/tCDM4ZpAp50" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<h3 id="Select-Dropdown-values"><a href="#Select-Dropdown-values" class="headerlink" title="Select Dropdown values"></a>Select Dropdown values</h3><p>Selenium WebDriver provides n number of inbuilt methods to perform actions on appliaction under test. For selecting dropdown values, selenium provides below three methods:</p>
-<ul>
-<li><strong>1. selectByIndex</strong></li>
-<li><strong>2. selectByValue</strong></li>
-<li><strong>3. selectByVisibleText</strong></li>
-</ul>
-<p><strong>selectByIndex</strong>  means select dropdown value using its index. Index starts from zero.<br>for  <strong>selectByValue</strong>  and  <strong>selectByVisibleText</strong>  , inspect using firebug to see its value and visible text.(Value and visible text can be same or different)<br>Refer below image and selenium code for the same</p>
-<p><img src="https://seleniumpoint.com/images/dropdown.png" alt="selenium webdriver window handling"></p>
-<figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">package</span> scripts;</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">import</span> org.openqa.selenium.By;</span><br><span class="line"><span class="hljs-keyword">import</span> org.openqa.selenium.WebDriver;</span><br><span class="line"><span class="hljs-keyword">import</span> org.openqa.selenium.WebElement;</span><br><span class="line"><span class="hljs-keyword">import</span> org.openqa.selenium.chrome.ChromeDriver;</span><br><span class="line"><span class="hljs-keyword">import</span> org.openqa.selenium.support.ui.Select;</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">selectDropdownValues</span> </span>&#123;</span><br><span class="line"></span><br><span class="line"> <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> InterruptedException </span>&#123;</span><br><span class="line">  <span class="hljs-comment">// TODO Auto-generated method stub</span></span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//set chromedriver path for Chrome browser</span></span><br><span class="line">  System.setProperty(<span class="hljs-string">"webdriver.chrome.driver"</span>, <span class="hljs-string">"C:\\harshal personal\\selenium\\chromedriver.exe"</span>);</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//create WebDriver object for Chrome</span></span><br><span class="line">  WebDriver driver = <span class="hljs-keyword">new</span> ChromeDriver();</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//open URL</span></span><br><span class="line">  driver.get(<span class="hljs-string">"https://www.seleniumpoint.com/testwebsite.php"</span>);</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//maximize the window</span></span><br><span class="line">  driver.manage().window().maximize();</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//get the Locator of drop down box</span></span><br><span class="line">  WebElement dropdown = driver.findElement(By.name(<span class="hljs-string">"ustate"</span>));</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//Create object of Select Class</span></span><br><span class="line">  Select select = <span class="hljs-keyword">new</span> Select(dropdown);</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//We can select Drop down value by three ways:</span></span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//Method 1: Select drop down value using index</span></span><br><span class="line">  select.selectByIndex(<span class="hljs-number">4</span>);</span><br><span class="line"></span><br><span class="line">  Thread.sleep(<span class="hljs-number">2000</span>);</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">// Method 2: Select drop down value using index</span></span><br><span class="line">  select.selectByValue(<span class="hljs-string">"Chhattisgarh"</span>);</span><br><span class="line"></span><br><span class="line">  Thread.sleep(<span class="hljs-number">2000</span>);</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//Method 3: Select drop down value using index</span></span><br><span class="line">  select.selectByVisibleText(<span class="hljs-string">"Maharashtra"</span>);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+            <h3 id="Setup-Firebug-Fire-Path-XPath-Checker"><a href="#Setup-Firebug-Fire-Path-XPath-Checker" class="headerlink" title="Setup Firebug, Fire Path, XPath Checker"></a>Setup Firebug, Fire Path, XPath Checker</h3><p>Selenium script is nothing but identify elements (text,text box, links, buttons, checkbox, windows etc.) on webpage and perform operations in order to automate it.<br>So those elements are identified by locators, (will explain locators in next topic). And above mentioned tools are played important role to identify locators, so install it first.</p>
+<h4 id="1-Firebug-Installation"><a href="#1-Firebug-Installation" class="headerlink" title="1.Firebug Installation:"></a>1.Firebug Installation:</h4><p>Firebug is Add-on to Firefox browser.</p>
+<p>Open Firefox browser–&gt;Tools–&gt;Add-ons–&gt;Extensions–&gt;search for Firbug–&gt;Install</p>
+<p><img src="https://seleniumpoint.com/images/Firebug.png" alt="install Firbug for selenium webDriver">  </p>
+<p>Once you install firebug, you will see firebug icon in Firefox browser at top right corner (see in image bellow)</p>
+<p><img src="https://seleniumpoint.com/images/FirbugInstalled.png" alt="How to use Firebug in Selenium WebDriver">  </p>
+<h4 id="2-FirePath-Installation"><a href="#2-FirePath-Installation" class="headerlink" title="2.FirePath Installation:"></a>2.FirePath Installation:</h4><p>Firebug is Add-on to Firebug,Installation process is same like firebug.</p>
+<p>Open Firefox browser –&gt;Tools–&gt;Add-ons–&gt;Extensions–&gt;search for Firpath–&gt;Install</p>
+<p><img src="https://seleniumpoint.com/images/Firepath.png" alt="install FirePath for selenium webDriver">  </p>
+<p>Once you install Firepath, Restart the Firefox browser, open any website any open Firbug.<br>In Firebug panel you can see Firpath , from where you can get readymade Xpath which you can use in script ahead.</p>
+<p><img src="https://seleniumpoint.com/images/firepath2.png" alt="How to use Firpath for selenium webDriver">  </p>
+<h4 id="3-XPath-Checker-Installation"><a href="#3-XPath-Checker-Installation" class="headerlink" title="3.XPath Checker Installation:"></a>3.XPath Checker Installation:</h4><p>XPath Checker is Addon to Firefox. Installation process is same like firebug</p>
+<p>Open Firefox browser –&gt;Tools–&gt;Add-ons–&gt;Extensions–&gt;search for Xpath Checker–&gt;Install</p>
+<p><img src="https://seleniumpoint.com/images/XpathChecker.png" alt="install XPath Checker for selenium webDriver">  </p>
+<p>Once you install XPath Checker ,restart Firefox browser. Open any website in Firefox ,right click on any web element, you can see View xpath option, means Xpath checker is installed.<br>Click on it, xpath checker window will appear, where you can identify xpath manually.</p>
+<p><img src="https://seleniumpoint.com/images/xpathChecker2.png" alt="How to use Xpath Checker for selenium webDriver"></p>
 
         </div>
         
@@ -205,17 +210,10 @@
 <div class="card card-transparent">
     <div class="level post-navigation is-flex-wrap is-mobile">
         
-        <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/Window-handling-using-Selenium-WebDriver/">
-                <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">Window handling using Selenium WebDriver</span>
-            </a>
-        </div>
-        
         
         <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/Selenium-WebDriver-Wait/">
-                <span class="level-item">Selenium WebDriver Wait</span>
+            <a class="level level-item has-link-grey  article-nav-next" href="/Get-Tooltip-Text-Using-Selenium-WebDriver/">
+                <span class="level-item">Get Tooltip Text Using Selenium WebDriver</span>
                 <i class="level-item fas fa-chevron-right"></i>
             </a>
         </div>
@@ -231,8 +229,8 @@
         
 <script>
     var disqus_config = function () {
-        this.page.url = 'http://seleniumpoint.com/Select-Dropdown-values/';
-        this.page.identifier = 'Select-Dropdown-values/';
+        this.page.url = 'http://seleniumpoint.com/install-firebug-firepath-xpathchecker-firefox-addons-for-selenium/';
+        this.page.identifier = '4';
     };
     (function() {
         var d = document, s = d.createElement('script');  
@@ -759,7 +757,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.svg" alt=" Select Dropdown values using Selenium WebDriver" height="28">
+                    <img src="/images/logo.svg" alt="Setup Firebug, Fire Path, XPath Checker" height="28">
                 
                 </a>
                 <p class="is-size-7">
