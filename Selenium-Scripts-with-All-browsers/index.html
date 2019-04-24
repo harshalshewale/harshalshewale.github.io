@@ -8,6 +8,7 @@
 
 
     <meta name="description" content="Run Selenium WebDriver scripts on all browsersRun Selenium WebDriver scripts on all browsersMulti browser testing is always important. Accordingly, we should know how to run selenium scripts on all">
+<meta name="keywords" content="Selenium">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Selenium Scripts with All browsers">
 <meta property="og:url" content="http://seleniumpoint.com/Selenium-Scripts-with-All-browsers/index.html">
@@ -15,7 +16,7 @@
 <meta property="og:description" content="Run Selenium WebDriver scripts on all browsersRun Selenium WebDriver scripts on all browsersMulti browser testing is always important. Accordingly, we should know how to run selenium scripts on all">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://seleniumpoint.com/images/og_image.png">
-<meta property="og:updated_time" content="2019-04-22T12:50:17.646Z">
+<meta property="og:updated_time" content="2019-04-23T07:47:30.235Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Selenium Scripts with All browsers">
 <meta name="twitter:description" content="Run Selenium WebDriver scripts on all browsersRun Selenium WebDriver scripts on all browsersMulti browser testing is always important. Accordingly, we should know how to run selenium scripts on all">
@@ -146,13 +147,17 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-04-22T12:48:45.000Z">2019-04-22</time>
+                <time class="level-item has-text-grey" datetime="2019-04-22T12:48:00.000Z">2019-04-22</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/Selenium/">Selenium</a>
+                </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    2 minutes read (About 345 words)
+                    2 minutes read (About 350 words)
                 </span>
                 
                 
@@ -180,40 +185,25 @@
 <p>Once you download the drivers keep it at any location, you will have to add its path in selenium program.</p>
 <h4 id="1-Firefox-Browser"><a href="#1-Firefox-Browser" class="headerlink" title="1.Firefox Browser:"></a>1.Firefox Browser:</h4><p><strong>System.setProperty (“webdriver.gecko.driver”,”\path\to\geckodriver.exe”);</strong> </p>
 <p><strong>Example:</strong></p>
-<pre><code>System.setProperty(&quot;webdriver.gecko.driver&quot;,&quot;C:\\harshal personal\\selenium\\geckodriver-v0.10.0-win64\\geckodriver.exe&quot;);
-//create WebDriver object for FireFox
-WebDriver driver=new FirefoxDriver();
-//open URL
-driver.get(&quot;http://www.google.com&quot;);
-</code></pre><h4 id="2-Chrome-Browser"><a href="#2-Chrome-Browser" class="headerlink" title="2.Chrome Browser:"></a>2.Chrome Browser:</h4><p><strong>System.setProperty (“webdriver.chrome.driver”,”\path\to\chromedriver.exe”);</strong> </p>
+<figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">System.setProperty(<span class="hljs-string">"webdriver.gecko.driver"</span>, <span class="hljs-string">"C:\\harshal personal\\selenium\\geckodriver-v0.10.0-win64\\geckodriver.exe"</span>);</span><br><span class="line"><span class="hljs-comment">//create WebDriver object for FireFox</span></span><br><span class="line">WebDriver driver = <span class="hljs-keyword">new</span> FirefoxDriver();</span><br><span class="line"><span class="hljs-comment">//open URL</span></span><br><span class="line">driver.get(<span class="hljs-string">"http://www.google.com"</span>);</span><br></pre></td></tr></table></figure>
+<h4 id="2-Chrome-Browser"><a href="#2-Chrome-Browser" class="headerlink" title="2.Chrome Browser:"></a>2.Chrome Browser:</h4><p><strong>System.setProperty (“webdriver.chrome.driver”,”\path\to\chromedriver.exe”);</strong> </p>
+<p><strong>Example:</strong><br><figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">System.setProperty(<span class="hljs-string">"webdriver.chrome.driver"</span>,<span class="hljs-string">"C:\\harshal personal\\selenium\\chromedriver.exe"</span>);</span><br><span class="line"><span class="hljs-comment">//create WebDriver object for Chrome</span></span><br><span class="line">WebDriver driver=<span class="hljs-keyword">new</span> ChromeDriver();</span><br><span class="line"><span class="hljs-comment">//open URL</span></span><br><span class="line">driver.get(<span class="hljs-string">"http://www.google.com"</span>);</span><br></pre></td></tr></table></figure></p>
+<h4 id="3-Internet-Explorer-Browser-For-Selenium-3-0-IE-version-9-or-above-supported"><a href="#3-Internet-Explorer-Browser-For-Selenium-3-0-IE-version-9-or-above-supported" class="headerlink" title="3.Internet Explorer Browser: (For Selenium 3.0 , IE version 9 or above supported )"></a>3.Internet Explorer Browser: (For Selenium 3.0 , IE version 9 or above supported )</h4><p><strong>System.setProperty (“webdriver.ie.driver”,”\path\to\InternetExplorerDriver.exe”);</strong> </p>
+<p><strong>Example:</strong><br><figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">System.setProperty(<span class="hljs-string">"webdriver.ie.driver"</span>, <span class="hljs-string">"C:\\harshal personal\\selenium\\InternetExplorerDriverr.exe"</span>);</span><br><span class="line"><span class="hljs-comment">//create WebDriver object for IE</span></span><br><span class="line">WebDriver driver = <span class="hljs-keyword">new</span> InternetExplorerDriver();</span><br><span class="line"><span class="hljs-comment">//open URL</span></span><br><span class="line">driver.get(<span class="hljs-string">"http://www.google.com"</span>);</span><br></pre></td></tr></table></figure></p>
+<h4 id="4-Microsoft-Edge-Browser"><a href="#4-Microsoft-Edge-Browser" class="headerlink" title="4.Microsoft Edge Browser:"></a>4.Microsoft Edge Browser:</h4><p><strong>System.setProperty (“webdriver.edge.driver”,”\path\to\MicrosoftWebDriver.exe”);</strong> </p>
+<p><strong>Example:</strong><br><figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">System.setProperty(<span class="hljs-string">"webdriver.edge.driver"</span>, <span class="hljs-string">"C:\\harshal personal\\selenium\\MicrosoftWebDriver.exe"</span>);</span><br><span class="line"><span class="hljs-comment">//create WebDriver object for Edge browser</span></span><br><span class="line">WebDriver driver = <span class="hljs-keyword">new</span> MicrosoftWebDriver();</span><br><span class="line"><span class="hljs-comment">//open URL</span></span><br><span class="line">driver.get(<span class="hljs-string">"http://www.google.com"</span>);</span><br></pre></td></tr></table></figure></p>
+<h4 id="5-Safari-Browser"><a href="#5-Safari-Browser" class="headerlink" title="5.Safari Browser:"></a>5.Safari Browser:</h4><p><strong>System.setProperty (“webdriver.safari.driver”,”\path\to\safaridriver.exe”);</strong> </p>
 <p><strong>Example:</strong></p>
-<pre><code>System.setProperty(&quot;webdriver.chrome.driver&quot;,&quot;C:\\harshal personal\\selenium\\chromedriver.exe&quot;);
-//create WebDriver object for Chrome
-WebDriver driver=new ChromeDriver();
-//open URL
-driver.get(&quot;http://www.google.com&quot;);
-</code></pre><h4 id="3-Internet-Explorer-Browser-For-Selenium-3-0-IE-version-9-or-above-supported"><a href="#3-Internet-Explorer-Browser-For-Selenium-3-0-IE-version-9-or-above-supported" class="headerlink" title="3.Internet Explorer Browser: (For Selenium 3.0 , IE version 9 or above supported )"></a>3.Internet Explorer Browser: (For Selenium 3.0 , IE version 9 or above supported )</h4><p><strong>System.setProperty (“webdriver.ie.driver”,”\path\to\InternetExplorerDriver.exe”);</strong> </p>
-<p><strong>Example:</strong></p>
-<pre><code>System.setProperty(&quot;webdriver.ie.driver&quot;,&quot;C:\\harshal personal\\selenium\\InternetExplorerDriverr.exe&quot;);
-                                //create WebDriver object for IE
-                                WebDriver driver=new InternetExplorerDriver();
-                                //open URL
-                                driver.get(&quot;http://www.google.com&quot;);
-</code></pre><h4 id="4-Microsoft-Edge-Browser"><a href="#4-Microsoft-Edge-Browser" class="headerlink" title="4.Microsoft Edge Browser:"></a>4.Microsoft Edge Browser:</h4><p><strong>System.setProperty (“webdriver.edge.driver”,”\path\to\MicrosoftWebDriver.exe”);</strong> </p>
-<p><strong>Example:</strong></p>
-<pre><code>System.setProperty(&quot;webdriver.edge.driver&quot;,&quot;C:\\harshal personal\\selenium\\MicrosoftWebDriver.exe&quot;);
-                                    //create WebDriver object for Edge browser
-                                    WebDriver driver=new MicrosoftWebDriver();
-                                    //open URL
-                                    driver.get(&quot;http://www.google.com&quot;);
-</code></pre><h4 id="5-Safari-Browser"><a href="#5-Safari-Browser" class="headerlink" title="5.Safari Browser:"></a>5.Safari Browser:</h4><p><strong>System.setProperty (“webdriver.safari.driver”,”\path\to\safaridriver.exe”);</strong> </p>
-<p><strong>Example:</strong></p>
-<pre><code>System.setProperty(&quot;webdriver.safari.driver&quot;,&quot;C:\\harshal personal\\selenium\\safaridriver.exe&quot;);
-//create WebDriver object for safari
-WebDriver driver=new SafariDriver();
-//open URL
-driver.get(&quot;http://www.google.com]&quot;);
-</code></pre>
+ <figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">System.setProperty(<span class="hljs-string">"webdriver.safari.driver"</span>, <span class="hljs-string">"C:\\harshal personal\\selenium\\safaridriver.exe"</span>);</span><br><span class="line">   <span class="hljs-comment">//create WebDriver object for safari</span></span><br><span class="line">   WebDriver driver = <span class="hljs-keyword">new</span> SafariDriver();</span><br><span class="line">   <span class="hljs-comment">//open URL</span></span><br><span class="line">   driver.get(<span class="hljs-string">"http://www.google.com]"</span>);</span><br></pre></td></tr></table></figure>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/tags/Selenium/">Selenium</a>
+                </div>
+            </div>
         </div>
         
         
@@ -437,7 +427,7 @@ driver.get(&quot;http://www.google.com]&quot;);
                 <span class="level-item">Selenium</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">1</span>
+                <span class="level-item tag">15</span>
             </span>
         </a></li>
             </ul>
@@ -468,7 +458,7 @@ driver.get(&quot;http://www.google.com]&quot;);
         
         <article class="media">
             
-            <a href="/Setup-Firebug-Fire-Path-XPath-Checker/" class="media-left">
+            <a href="/install-firebug-firepath-xpathchecker-firefox-addons-for-selenium-new/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/images/thumbnail.svg" alt="Setup Firebug, Fire Path, XPath Checker">
                 </p>
@@ -476,10 +466,10 @@ driver.get(&quot;http://www.google.com]&quot;);
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T03:30:54.000Z">2019-04-23</time></div>
-                    <a href="/Setup-Firebug-Fire-Path-XPath-Checker/" class="has-link-black-ter is-size-6">Setup Firebug, Fire Path, XPath Checker</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T03:30:00.000Z">2019-04-23</time></div>
+                    <a href="/install-firebug-firepath-xpathchecker-firefox-addons-for-selenium-new/" class="has-link-black-ter is-size-6">Setup Firebug, Fire Path, XPath Checker</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/Selenium/">Selenium</a>
                     </p>
                 </div>
             </div>
@@ -495,10 +485,10 @@ driver.get(&quot;http://www.google.com]&quot;);
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T02:56:39.000Z">2019-04-23</time></div>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T02:56:00.000Z">2019-04-23</time></div>
                     <a href="/Get-Tooltip-Text-Using-Selenium-WebDriver/" class="has-link-black-ter is-size-6">Get Tooltip Text Using Selenium WebDriver</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/Selenium/">Selenium</a>
                     </p>
                 </div>
             </div>
@@ -514,10 +504,10 @@ driver.get(&quot;http://www.google.com]&quot;);
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T02:55:15.000Z">2019-04-23</time></div>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T02:55:00.000Z">2019-04-23</time></div>
                     <a href="/Print-Table-Data-Using-Selenium-WebDriver/" class="has-link-black-ter is-size-6">Print Table Data Using Selenium WebDriver</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/Selenium/">Selenium</a>
                     </p>
                 </div>
             </div>
@@ -533,10 +523,10 @@ driver.get(&quot;http://www.google.com]&quot;);
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T02:50:28.000Z">2019-04-23</time></div>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T02:50:00.000Z">2019-04-23</time></div>
                     <a href="/Print-All-Web-Page-Links-using-Selenium-WebDriver/" class="has-link-black-ter is-size-6">Print All Web Page Links using Selenium WebDriver</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/Selenium/">Selenium</a>
                     </p>
                 </div>
             </div>
@@ -552,10 +542,10 @@ driver.get(&quot;http://www.google.com]&quot;);
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T02:03:57.000Z">2019-04-23</time></div>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T02:03:00.000Z">2019-04-23</time></div>
                     <a href="/Alerts-Handling-using-Selenium-WebDriver/" class="has-link-black-ter is-size-6">Alerts Handling using Selenium WebDriver</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/Selenium/">Selenium</a>
                     </p>
                 </div>
             </div>
@@ -600,7 +590,7 @@ driver.get(&quot;http://www.google.com]&quot;);
                 <div class="control">
                     <a class="tags has-addons" href="/tags/Selenium/">
                         <span class="tag">Selenium</span>
-                        <span class="tag is-grey">1</span>
+                        <span class="tag is-grey">15</span>
                     </a>
                 </div>
                 
@@ -629,7 +619,7 @@ driver.get(&quot;http://www.google.com]&quot;);
         
         <article class="media">
             
-            <a href="/Setup-Firebug-Fire-Path-XPath-Checker/" class="media-left">
+            <a href="/install-firebug-firepath-xpathchecker-firefox-addons-for-selenium-new/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/images/thumbnail.svg" alt="Setup Firebug, Fire Path, XPath Checker">
                 </p>
@@ -637,10 +627,10 @@ driver.get(&quot;http://www.google.com]&quot;);
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T03:30:54.000Z">2019-04-23</time></div>
-                    <a href="/Setup-Firebug-Fire-Path-XPath-Checker/" class="has-link-black-ter is-size-6">Setup Firebug, Fire Path, XPath Checker</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T03:30:00.000Z">2019-04-23</time></div>
+                    <a href="/install-firebug-firepath-xpathchecker-firefox-addons-for-selenium-new/" class="has-link-black-ter is-size-6">Setup Firebug, Fire Path, XPath Checker</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/Selenium/">Selenium</a>
                     </p>
                 </div>
             </div>
@@ -656,10 +646,10 @@ driver.get(&quot;http://www.google.com]&quot;);
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T02:56:39.000Z">2019-04-23</time></div>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T02:56:00.000Z">2019-04-23</time></div>
                     <a href="/Get-Tooltip-Text-Using-Selenium-WebDriver/" class="has-link-black-ter is-size-6">Get Tooltip Text Using Selenium WebDriver</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/Selenium/">Selenium</a>
                     </p>
                 </div>
             </div>
@@ -675,10 +665,10 @@ driver.get(&quot;http://www.google.com]&quot;);
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T02:55:15.000Z">2019-04-23</time></div>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T02:55:00.000Z">2019-04-23</time></div>
                     <a href="/Print-Table-Data-Using-Selenium-WebDriver/" class="has-link-black-ter is-size-6">Print Table Data Using Selenium WebDriver</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/Selenium/">Selenium</a>
                     </p>
                 </div>
             </div>
@@ -694,10 +684,10 @@ driver.get(&quot;http://www.google.com]&quot;);
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T02:50:28.000Z">2019-04-23</time></div>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T02:50:00.000Z">2019-04-23</time></div>
                     <a href="/Print-All-Web-Page-Links-using-Selenium-WebDriver/" class="has-link-black-ter is-size-6">Print All Web Page Links using Selenium WebDriver</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/Selenium/">Selenium</a>
                     </p>
                 </div>
             </div>
@@ -713,10 +703,10 @@ driver.get(&quot;http://www.google.com]&quot;);
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T02:03:57.000Z">2019-04-23</time></div>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T02:03:00.000Z">2019-04-23</time></div>
                     <a href="/Alerts-Handling-using-Selenium-WebDriver/" class="has-link-black-ter is-size-6">Alerts Handling using Selenium WebDriver</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/Selenium/">Selenium</a>
                     </p>
                 </div>
             </div>
@@ -761,7 +751,7 @@ driver.get(&quot;http://www.google.com]&quot;);
                 <div class="control">
                     <a class="tags has-addons" href="/tags/Selenium/">
                         <span class="tag">Selenium</span>
-                        <span class="tag is-grey">1</span>
+                        <span class="tag is-grey">15</span>
                     </a>
                 </div>
                 

@@ -2,24 +2,19 @@
 <html lang="en">
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-<title>How to set up Selenium WebDriver Environment - Hexo</title>
+<title>Tag: Selenium - Hexo</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
-    <meta name="description" content="Step 1: Install JDKDownload and Install Java from bellow: (for selenium 3.0, make sure you are downloading JDK 8 and above) http://www.oracle.com/technetwork/java/javase/downloads/index.html  Step 2">
-<meta name="keywords" content="Selenium">
-<meta property="og:type" content="article">
-<meta property="og:title" content="How to set up Selenium WebDriver Environment">
-<meta property="og:url" content="http://seleniumpoint.com/How-to-set-up-Selenium-WebDriver-Environment/index.html">
+    <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://seleniumpoint.com/tags/Selenium/page/2/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Step 1: Install JDKDownload and Install Java from bellow: (for selenium 3.0, make sure you are downloading JDK 8 and above) http://www.oracle.com/technetwork/java/javase/downloads/index.html  Step 2">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://seleniumpoint.com/images/og_image.png">
-<meta property="og:updated_time" content="2019-04-23T07:46:13.011Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="How to set up Selenium WebDriver Environment">
-<meta name="twitter:description" content="Step 1: Install JDKDownload and Install Java from bellow: (for selenium 3.0, make sure you are downloading JDK 8 and above) http://www.oracle.com/technetwork/java/javase/downloads/index.html  Step 2">
+<meta name="twitter:title" content="Hexo">
 <meta name="twitter:image" content="http://seleniumpoint.com/images/og_image.png">
 
 
@@ -94,7 +89,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt="How to set up Selenium WebDriver Environment" height="28">
+                <img src="/images/logo.svg" alt="Hexo" height="28">
             
             </a>
         </div>
@@ -142,6 +137,241 @@
         <div class="container">
             <div class="columns">
                 <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
+    <div class="card-content">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+        <ul>
+            <li><a href="/tags">Tags</a></li>
+            <li class="is-active"><a href="#" aria-current="page">Selenium</a></li>
+        </ul>
+        </nav>
+    </div>
+</div>
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-04-23T01:43:00.000Z">2019-04-23</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/Selenium/">Selenium</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    2 minutes read (About 228 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/First-Selenium-Script/">First Selenium Script</a>
+            
+        </h1>
+        <div class="content">
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/prLtHrLjXqQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h3 id="First-Selenium-Script"><a href="#First-Selenium-Script" class="headerlink" title="First Selenium Script"></a>First Selenium Script</h3><p><strong>All setup and basic prerequisites are done. Now lets us start with first basic selenium script.</strong></p>
+<p>Guys, I have developed a test website for running your selenium scripts. Below is the test website link you can use for your selenium scripts to run:<br><a href="http://www.seleniumpoint/testwebsite.php" target="_blank" rel="noopener">http://www.seleniumpoint/testwebsite.php</a></p>
+<p><strong>Let us start with the first script; Register a new user on selenium point test website.</strong></p>
+<p><img src="https://seleniumpoint.com/images/registration.png" alt="first selenium script : User registration">  </p>
+<p><strong>Selenium Code</strong><br><figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="hljs-keyword">package</span> scripts;</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">import</span> org.openqa.selenium.By;</span><br><span class="line"><span class="hljs-keyword">import</span> org.openqa.selenium.WebDriver;</span><br><span class="line"><span class="hljs-keyword">import</span> org.openqa.selenium.firefox.FirefoxDriver;</span><br><span class="line"><span class="hljs-keyword">import</span> org.openqa.selenium.support.ui.Select;</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">registration</span> </span>&#123;</span><br><span class="line"></span><br><span class="line"> <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//Set FireFox geckoDriver path</span></span><br><span class="line">  System.setProperty(<span class="hljs-string">"webdriver.gecko.driver"</span>, <span class="hljs-string">"C:\\harshal personal\\selenium\\geckodriver-v0.10.0-win64\\geckodriver.exe"</span>);</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//Initiate FireFox Browser</span></span><br><span class="line">  WebDriver d = <span class="hljs-keyword">new</span> FirefoxDriver();</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//Open WebSite</span></span><br><span class="line">  d.get(<span class="hljs-string">"[http://www.seleniumpoint.com/testwebsite.php](http://www.seleniumpoint.com/testwebsite.php)"</span>);</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//Fill Registration Form</span></span><br><span class="line">  d.findElement(By.id(<span class="hljs-string">"name"</span>)).sendKeys(<span class="hljs-string">"harshal shewale"</span>);</span><br><span class="line">  d.findElement(By.id(<span class="hljs-string">"mobile"</span>)).sendKeys(<span class="hljs-string">"7507083311"</span>);</span><br><span class="line">  d.findElement(By.id(<span class="hljs-string">"email"</span>)).sendKeys(<span class="hljs-string">"harshal@seleniumpoint.com"</span>);</span><br><span class="line">  d.findElement(By.id(<span class="hljs-string">"password"</span>)).sendKeys(<span class="hljs-string">"harshal"</span>);</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//Select state from Drop down menu</span></span><br><span class="line">  Select select = <span class="hljs-keyword">new</span> Select(d.findElement(By.name(<span class="hljs-string">"ustate"</span>)));</span><br><span class="line">  select.selectByVisibleText(<span class="hljs-string">"Karnataka"</span>);</span><br><span class="line"></span><br><span class="line">  d.findElement(By.name(<span class="hljs-string">"termsCheck"</span>)).click();</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//Click On Submit button</span></span><br><span class="line">  d.findElement(By.id(<span class="hljs-string">"nsubmit"</span>)).click();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-04-22T12:48:00.000Z">2019-04-22</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/Selenium/">Selenium</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    2 minutes read (About 350 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/Selenium-Scripts-with-All-browsers/">Selenium Scripts with All browsers</a>
+            
+        </h1>
+        <div class="content">
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/gzOvTsvS11w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h3 id="Run-Selenium-WebDriver-scripts-on-all-browsers"><a href="#Run-Selenium-WebDriver-scripts-on-all-browsers" class="headerlink" title="Run Selenium WebDriver scripts on all browsers"></a>Run Selenium WebDriver scripts on all browsers</h3><h4 id="Run-Selenium-WebDriver-scripts-on-all-browsers-1"><a href="#Run-Selenium-WebDriver-scripts-on-all-browsers-1" class="headerlink" title="Run Selenium WebDriver scripts on all browsers"></a>Run Selenium WebDriver scripts on all browsers</h4><p>Multi browser testing is always important. Accordingly, we should know how to run selenium scripts on all supported browsers,solet know how selenium works with different browsers.<br>Selenium requires external browser drivers specific to browser to run the scripts.<br>For example,</p>
+<ul>
+<li>For Firefox:<strong>GeckoDriver</strong> is required.</li>
+<li>For Chrome:  <strong>ChromeDriver</strong> is required.</li>
+<li>For IE:  <strong>InternetExplorerDriver</strong> is required.</li>
+<li>For Microsoft Edge Browser:  <strong>MicrosoftEdgeDriver</strong> is required.</li>
+<li>For Safari:  <strong>SafariDriver</strong> is required.</li>
+</ul>
+<p><strong>Download All drivers from bellow link:</strong><br><a href="http://www.seleniumhq.org/download/" target="_blank" rel="noopener">http://www.seleniumhq.org/download/</a></p>
+<p><img src="https://seleniumpoint.com/images/broserDrivers.png" alt="downlaod chromedriver,geckodriver,safaridriver,iedriver for selenium webdriver">  </p>
+<p>Once you download the drivers keep it at any location, you will have to add its path in selenium program.</p>
+<h4 id="1-Firefox-Browser"><a href="#1-Firefox-Browser" class="headerlink" title="1.Firefox Browser:"></a>1.Firefox Browser:</h4><p><strong>System.setProperty (“webdriver.gecko.driver”,”\path\to\geckodriver.exe”);</strong> </p>
+<p><strong>Example:</strong></p>
+<figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">System.setProperty(<span class="hljs-string">"webdriver.gecko.driver"</span>, <span class="hljs-string">"C:\\harshal personal\\selenium\\geckodriver-v0.10.0-win64\\geckodriver.exe"</span>);</span><br><span class="line"><span class="hljs-comment">//create WebDriver object for FireFox</span></span><br><span class="line">WebDriver driver = <span class="hljs-keyword">new</span> FirefoxDriver();</span><br><span class="line"><span class="hljs-comment">//open URL</span></span><br><span class="line">driver.get(<span class="hljs-string">"http://www.google.com"</span>);</span><br></pre></td></tr></table></figure>
+<h4 id="2-Chrome-Browser"><a href="#2-Chrome-Browser" class="headerlink" title="2.Chrome Browser:"></a>2.Chrome Browser:</h4><p><strong>System.setProperty (“webdriver.chrome.driver”,”\path\to\chromedriver.exe”);</strong> </p>
+<p><strong>Example:</strong><br><figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">System.setProperty(<span class="hljs-string">"webdriver.chrome.driver"</span>,<span class="hljs-string">"C:\\harshal personal\\selenium\\chromedriver.exe"</span>);</span><br><span class="line"><span class="hljs-comment">//create WebDriver object for Chrome</span></span><br><span class="line">WebDriver driver=<span class="hljs-keyword">new</span> ChromeDriver();</span><br><span class="line"><span class="hljs-comment">//open URL</span></span><br><span class="line">driver.get(<span class="hljs-string">"http://www.google.com"</span>);</span><br></pre></td></tr></table></figure></p>
+<h4 id="3-Internet-Explorer-Browser-For-Selenium-3-0-IE-version-9-or-above-supported"><a href="#3-Internet-Explorer-Browser-For-Selenium-3-0-IE-version-9-or-above-supported" class="headerlink" title="3.Internet Explorer Browser: (For Selenium 3.0 , IE version 9 or above supported )"></a>3.Internet Explorer Browser: (For Selenium 3.0 , IE version 9 or above supported )</h4><p><strong>System.setProperty (“webdriver.ie.driver”,”\path\to\InternetExplorerDriver.exe”);</strong> </p>
+<p><strong>Example:</strong><br><figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">System.setProperty(<span class="hljs-string">"webdriver.ie.driver"</span>, <span class="hljs-string">"C:\\harshal personal\\selenium\\InternetExplorerDriverr.exe"</span>);</span><br><span class="line"><span class="hljs-comment">//create WebDriver object for IE</span></span><br><span class="line">WebDriver driver = <span class="hljs-keyword">new</span> InternetExplorerDriver();</span><br><span class="line"><span class="hljs-comment">//open URL</span></span><br><span class="line">driver.get(<span class="hljs-string">"http://www.google.com"</span>);</span><br></pre></td></tr></table></figure></p>
+<h4 id="4-Microsoft-Edge-Browser"><a href="#4-Microsoft-Edge-Browser" class="headerlink" title="4.Microsoft Edge Browser:"></a>4.Microsoft Edge Browser:</h4><p><strong>System.setProperty (“webdriver.edge.driver”,”\path\to\MicrosoftWebDriver.exe”);</strong> </p>
+<p><strong>Example:</strong><br><figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">System.setProperty(<span class="hljs-string">"webdriver.edge.driver"</span>, <span class="hljs-string">"C:\\harshal personal\\selenium\\MicrosoftWebDriver.exe"</span>);</span><br><span class="line"><span class="hljs-comment">//create WebDriver object for Edge browser</span></span><br><span class="line">WebDriver driver = <span class="hljs-keyword">new</span> MicrosoftWebDriver();</span><br><span class="line"><span class="hljs-comment">//open URL</span></span><br><span class="line">driver.get(<span class="hljs-string">"http://www.google.com"</span>);</span><br></pre></td></tr></table></figure></p>
+<h4 id="5-Safari-Browser"><a href="#5-Safari-Browser" class="headerlink" title="5.Safari Browser:"></a>5.Safari Browser:</h4><p><strong>System.setProperty (“webdriver.safari.driver”,”\path\to\safaridriver.exe”);</strong> </p>
+<p><strong>Example:</strong></p>
+ <figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">System.setProperty(<span class="hljs-string">"webdriver.safari.driver"</span>, <span class="hljs-string">"C:\\harshal personal\\selenium\\safaridriver.exe"</span>);</span><br><span class="line">   <span class="hljs-comment">//create WebDriver object for safari</span></span><br><span class="line">   WebDriver driver = <span class="hljs-keyword">new</span> SafariDriver();</span><br><span class="line">   <span class="hljs-comment">//open URL</span></span><br><span class="line">   driver.get(<span class="hljs-string">"http://www.google.com]"</span>);</span><br></pre></td></tr></table></figure>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-04-22T12:27:00.000Z">2019-04-22</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/Selenium/">Selenium</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    4 minutes read (About 613 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/Locators-in-Selenium-WebDriver/">Locators in Selenium WebDriver</a>
+            
+        </h1>
+        <div class="content">
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/W_wuP_YEs5c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h3 id="Locators-in-Selenium-WebDriver"><a href="#Locators-in-Selenium-WebDriver" class="headerlink" title="Locators in Selenium WebDriver"></a>Locators in Selenium WebDriver</h3><p>To perform any action on any web element on UI or webpage, you need its unique locator. For example, if you want to click on button present on UI, you must have to find  <strong>ID, Name, Xpath, CSS etc.</strong>  of that particular button.</p>
+<p><strong>Here are the available locators frequently used:</strong></p>
+<ul>
+<li><ol>
+<li>ID</li>
+</ol>
+</li>
+<li><ol start="2">
+<li>Name</li>
+</ol>
+</li>
+<li><ol start="3">
+<li>Link Text</li>
+</ol>
+</li>
+<li><ol start="4">
+<li>XPath</li>
+</ol>
+</li>
+<li><ol start="5">
+<li>CSS</li>
+</ol>
+</li>
+<li><ol start="6">
+<li>DOM</li>
+</ol>
+</li>
+</ul>
+<p>(It is not mandatory to present all above locators for each web element, so use whatever is present. But make sure ID should be the highest priority if it is present.</p>
+<h4 id="1-ID"><a href="#1-ID" class="headerlink" title="1.ID"></a>1.ID</h4><p>ID is the best way to locate web element if ID is present, as ID supposed to be unique for each element, it works fast to locate element than XPath.<br>Look at bellow Image and HTML code and corresponding selenium code to locate element (Name text box) by using ID.</p>
+<p><img src="https://seleniumpoint.com/images/id.png" alt="how to find element using ID in Selenium WebDriver">  </p>
+<p><strong>Selenium Code:</strong></p>
+<p>d.findElement(By.id(“FirstName”)).sendKeys(“harshal”);</p>
+<h4 id="2-Name"><a href="#2-Name" class="headerlink" title="2.Name"></a>2.Name</h4><p>If there is no ID present for any element, the next attribute to look up should be name. but make sure it should be unique.</p>
+<p><img src="https://seleniumpoint.com/images/name.png" alt="how to find element using name in Selenium WebDriver">  </p>
+<p><strong>Selenium Code:</strong></p>
+<p>d.findElement(By.name(“LastName”)).sendKeys(“harshal”);</p>
+<h4 id="3-Link-Text"><a href="#3-Link-Text" class="headerlink" title="3.Link Text"></a>3.Link Text</h4><p>This kind of locators applies only on hyperlinks. Hyperlinks has anchor tag in HTML.<br>This is anchor tag :  <strong>a</strong></p>
+<p><img src="https://seleniumpoint.com/images/linktext.png" alt="how to find element using Link text Selenium WebDriver">  </p>
+<p><strong>Selenium Code:</strong></p>
+<p>d.findElement(By.linkText(“Learn more”)).click();</p>
+<h4 id="4-XPath"><a href="#4-XPath" class="headerlink" title="4.XPath"></a>4.XPath</h4><p><strong>XPath</strong>  means  <strong>XML Path</strong>. When any web page element does not have any unique locator then we have to use XPath.<br><strong>XPath can access almost any web element.</strong></p>
+<p>There are two types of XPath:</p>
+<ul>
+<li><strong>1) Absolute XPath</strong></li>
+<li><strong>2) Relative XPath</strong></li>
+</ul>
+<p><strong>Absolute XPath:</strong></p>
+<p>It is the direct way to find the element, hence it is fast way to find element. but the disadvantage is that if there are any changes made in the path of the element then that XPath gets failed.<br>It begins with the single forward slash(/) ,which means you can select the element from the root node.<br><strong>Syntax:</strong><br><strong>html/head/body/table/tr/td</strong><br>Look at bellow image, I have shown you absolute XPath using Fire path.</p>
+<p><img src="https://seleniumpoint.com/images/Absolute%20XPath.png" alt="how to find element using Link text Selenium WebDriver">  </p>
+<p><strong>Relative XPath:</strong></p>
+<p>In Relative XPath, path starts from the middle of the HTML DOM structure. ( from the node of your choice) It starts with double slash (//).<br><strong>Syntax:</strong><br><strong>//table/tbody/tr/th</strong><br>Look at bellow image, I have shown you relative XPath using Fire path.</p>
+<p><img src="https://seleniumpoint.com/images/relative%20xpath.png" alt="how to find element using Link text Selenium WebDriver">  </p>
+<p><strong>How to Identify XPath:</strong></p>
+<p>There are many ways and tools available to identify Xpath. Let see few ways to get XPath:<br><strong>Identify XPath using Fire path:</strong><br>In 4th tutorial above, I have mentioned how to install Fire Path<br>Once you install Fire bug and its add-on Fire Path, inspect any web element using Fire Bug, it will give you XPath. See below image for the same.</p>
+<p><img src="https://seleniumpoint.com/images/xpath_firepath.png" alt="how to find element using Link text Selenium WebDriver">  </p>
+<p><strong>Also you can manually identify XPath, watch video for the same.</strong></p>
+<h4 id="5-CSS"><a href="#5-CSS" class="headerlink" title="5.CSS"></a>5.CSS</h4><p>Compared to XPath locators, CSS locators are faster. It is observed that, In Internet Explorer browser XPath works too slow, while CSS works pretty much faster.<br><strong>Syntax:</strong><br><strong>tagName[attributename=attributeValue]</strong><br><strong>input[id=FirstName]</strong></p>
+<p>In CSS, for ID property, we can use hash (#), so above CSS will become<br><strong>input#FirstName</strong><br>Also for Class, CSS use dot (.)<br>For example:<br>Input[class=fname]<br>Input.fname</p>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
     
     <div class="card-content article ">
         
@@ -166,7 +396,7 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                How to set up Selenium WebDriver Environment
+                <a class="has-link-black-ter" href="/How-to-set-up-Selenium-WebDriver-Environment/">How to set up Selenium WebDriver Environment</a>
             
         </h1>
         <div class="content">
@@ -204,15 +434,95 @@
 <figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="hljs-keyword">import</span> org.openqa.selenium.WebDriver;</span><br><span class="line"><span class="hljs-keyword">import</span> org.openqa.selenium.firefox.FirefoxDriver;</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">openURL</span> </span>&#123;</span><br><span class="line"></span><br><span class="line"> <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//set Gecko driver for FireFox browser</span></span><br><span class="line">  System.setProperty(<span class="hljs-string">"webdriver.gecko.driver"</span>, <span class="hljs-string">"C:\\harshal personal\\selenium\\geckodriver-v0.10.0-win64\\geckodriver.exe"</span>);</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//create WebDriver object for FireFox</span></span><br><span class="line">  WebDriver driver = <span class="hljs-keyword">new</span> FirefoxDriver();</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//open URL</span></span><br><span class="line">  driver.get(<span class="hljs-string">"http://www.seleniumpoint.com"</span>);</span><br><span class="line"></span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
         </div>
         
-        <div class="level is-size-7 is-uppercase">
-            <div class="level-start">
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-04-17T11:57:00.000Z">2019-04-17</time>
+                
                 <div class="level-item">
-                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
-                    <a class="has-link-grey -link" href="/tags/Selenium/">Selenium</a>
+                <a class="has-link-grey -link" href="/categories/Selenium/">Selenium</a>
                 </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    5 minutes read (About 702 words)
+                </span>
+                
+                
             </div>
         </div>
         
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/Introduction-IDE-RC-WebDriver/">Introduction: IDE, RC, WebDriver</a>
+            
+        </h1>
+        <div class="content">
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/lAXRavo-4E0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+<h1 id="What-is-Selenium"><a href="#What-is-Selenium" class="headerlink" title="What is Selenium. ?"></a>What is Selenium. ?</h1><p>Selenium is a brilliant open source automation tool made available by ThoughtWorks Technologies. Simply it automates the browser.</p>
+<p>We use Selenium to automate any kind of web application, Selenium supports various browsers as well as various programming languages.Indeed, it has limitations too, it cannot automate Windows component.</p>
+<p>Selenium provides four packages; we can use anyone according to our requirement</p>
+<ol>
+<li>Selenium IDE</li>
+<li>Selenium RC</li>
+<li>Selenium WebDriver</li>
+<li>Selenium Grid</li>
+</ol>
+<h5 id="SELENIUM-IDE"><a href="#SELENIUM-IDE" class="headerlink" title="SELENIUM IDE"></a>SELENIUM IDE</h5><p>It is Integrated Development Environment. Basically is a play and record tool works only with Firefox browser. we can record the scripts using IDE and convert it to programing languages like Java, C#, HTML etc. Like every tool, it has limitation too.</p>
+<h6 id="Advantages"><a href="#Advantages" class="headerlink" title="Advantages:"></a>Advantages:</h6><p>Very easy to install and use, its plugin to Firefox.<br>No programing experience is required.<br>We can debug and set breakpoints as well.<br>Recorded script can convert to programing language and utilize it in RC and WebDriver.</p>
+<h6 id="Disadvantages"><a href="#Disadvantages" class="headerlink" title="Disadvantages:"></a>Disadvantages:</h6><p>Works only with Firefox browser.<br>No logical statements and conditions like for and while loop.<br>No database testing.</p>
+<p>It cannot be used in the testing for iPhone and Android applications.<br>Reading from external file like excel, xml, etc. not supported.<br>Alerts, pop up not supported.</p>
+<h4 id="SELENIUM-RC"><a href="#SELENIUM-RC" class="headerlink" title="SELENIUM RC"></a>SELENIUM RC</h4><p>To overcome selenium IDE limitations, Selenium RC was initially developed. Basically it is developed to act as a proxy between application under test and selenium scripts. With RC we can write selenium script in any programing languages like java, c#, Perl, python etc. and run over all browsers.</p>
+<p>Selenium RC components are:<br>Selenium Server<br>Selenium Server receives Selenium commands from your test program, interprets them, and reports back to your program the results of running those tests.</p>
+<p>Client Libraries<br>The client libraries provide the programming support that allows you to run Selenium commands from a program of your own design. There is a different client library for each supported language. A Selenium client library provides a programming interface (API), i.e., a set of functions, which run Selenium commands from your own program. Within each interface, there is a programming function that supports each Selenese command.</p>
+<p>Supported API : JAVA, .Net, PHP, Python, Perl, Ruby.</p>
+<p>rc.png<br><img src="/images/pasted-0.png" alt="upload successful"></p>
+<p>But like selenium IDE, Selenium RC also has its limitations, every time we have to start &amp; stop the RC server to execute scripts. As server acts as a middleware between scripts and browser, it directly impacts on execution speed to get down slow. Similarly, there are many other limitations, to overcome those limitations Selenium WebDriver came in a picture. So lets understand the advantages of WebDriver over RC,</p>
+<pre><code>1.With Selenium WebDriver, no need to start any server to run tests.
+
+2.WebDriver is faster than Selenium RC since it speaks directly to the browser uses the browser&apos;s own engine to control it.
+
+3.Selenium RC is slower since it uses a JavaScript program called Selenium Core.
+
+4.WebDriver can support the headless HtmlUnit browser. 
+
+5.Selenium RC cannot support the headless HtmlUnit browser. It needs a real, visible browser to operate on.
+
+6.Web driver maintains the page load synchronization by default.
+</code></pre><h4 id="SELENIUM-WEBDRIVER"><a href="#SELENIUM-WEBDRIVER" class="headerlink" title="SELENIUM WEBDRIVER"></a>SELENIUM WEBDRIVER</h4><p>Selenium WebDriver is advanced version of RC, its successor of RC actually. WebDriver does same job like RC but in a different way: instead of injecting a JavaScript code into the browser to simulate user actions, it uses the browsers native support for automation (different for each browser). We have already seen WebDriver advantages over RC above. So here onwards I will cover Web Automation using Selenium WebDriver.</p>
+<h6 id="WebDriver-is-known-as-SELENIUM-2-0"><a href="#WebDriver-is-known-as-SELENIUM-2-0" class="headerlink" title="WebDriver is known as SELENIUM 2.0"></a>WebDriver is known as SELENIUM 2.0</h6><p>Stable build of Selenium 2 (WebDriver) was released in July 2011.</p>
+<p>Now SELENIUM 2.0 also enhanced to SELENIUM 3.0 this year 2016.</p>
+<p>While migrating from Selenium 2.0 to Selenium 3.0, we have to take care bellow things:</p>
+<ol>
+<li>You will need to be running Java 8 to use the Java pieces of Selenium.This is the oldest version of Java officially supported by Oracle, so hopefully you are using it already!</li>
+<li>Support for Firefox is via Mozillas geckodriver.</li>
+<li>Support for Safari is provided on macOS (Sierra or later) via Apples own safaridriver.</li>
+<li>Support for Edge is provided by MS through their webdriver server.</li>
+<li>Only versions 9 or above of IE are supported. Earlier versions may work, but are no longer supported as MS no longer supports them.</li>
+</ol>
+
+        </div>
+        
         
         
     </div>
@@ -222,51 +532,27 @@
 
 
 
-<div class="card card-transparent">
-    <div class="level post-navigation is-flex-wrap is-mobile">
-        
-        <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/Locators-in-Selenium-WebDriver/">
-                <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">Locators in Selenium WebDriver</span>
-            </a>
-        </div>
-        
-        
-        <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/Introduction-IDE-RC-WebDriver/">
-                <span class="level-item">Introduction: IDE, RC, WebDriver</span>
-                <i class="level-item fas fa-chevron-right"></i>
-            </a>
-        </div>
-        
-    </div>
-</div>
 
 
 
-<div class="card">
-    <div class="card-content">
-        <h3 class="title is-5 has-text-weight-normal">Comments</h3>
-        
-<script>
-    var disqus_config = function () {
-        this.page.url = 'http://seleniumpoint.com/How-to-set-up-Selenium-WebDriver-Environment/';
-        this.page.identifier = 'How-to-set-up-Selenium-WebDriver-Environment/';
-    };
-    (function() {
-        var d = document, s = d.createElement('script');  
-        s.src = '//' + 'seleniumpoint' + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
 
-<div id="disqus_thread">
     
-    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</div>
-    </div>
+<div class="card card-transparent">
+    <nav class="pagination is-centered" role="navigation" aria-label="pagination">
+        <div class="pagination-previous">
+            <a class="is-flex-grow has-text-black-ter" href="/tags/Selenium/">Previous</a>
+        </div>
+        <div class="pagination-next is-invisible is-hidden-mobile">
+            <a class="is-flex-grow has-text-black-ter" href="/tags/Selenium/page/3/">Next</a>
+        </div>
+        <ul class="pagination-list is-hidden-mobile">
+            
+            <li><a class="pagination-link has-text-black-ter" href="/tags/Selenium/">1</a></li>
+            
+            <li><a class="pagination-link is-current" href="/tags/Selenium/page/2/">2</a></li>
+            
+        </ul>
+    </nav>
 </div>
 </div>
                 
@@ -779,7 +1065,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.svg" alt="How to set up Selenium WebDriver Environment" height="28">
+                    <img src="/images/logo.svg" alt="Hexo" height="28">
                 
                 </a>
                 <p class="is-size-7">

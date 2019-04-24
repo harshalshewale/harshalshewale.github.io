@@ -143,7 +143,11 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-04-23T03:30:54.000Z">2019-04-23</time>
+                <time class="level-item has-text-grey" datetime="2019-04-23T03:30:00.000Z">2019-04-23</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/Selenium/">Selenium</a>
+                </div>
                 
                 
                 <span class="level-item has-text-grey">
@@ -158,7 +162,7 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/Setup-Firebug-Fire-Path-XPath-Checker/">Setup Firebug, Fire Path, XPath Checker</a>
+                <a class="has-link-black-ter" href="/install-firebug-firepath-xpathchecker-firefox-addons-for-selenium-new/">Setup Firebug, Fire Path, XPath Checker</a>
             
         </h1>
         <div class="content">
@@ -199,7 +203,11 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-04-23T02:56:39.000Z">2019-04-23</time>
+                <time class="level-item has-text-grey" datetime="2019-04-23T02:56:00.000Z">2019-04-23</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/Selenium/">Selenium</a>
+                </div>
                 
                 
                 <span class="level-item has-text-grey">
@@ -243,13 +251,17 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-04-23T02:55:15.000Z">2019-04-23</time>
+                <time class="level-item has-text-grey" datetime="2019-04-23T02:55:00.000Z">2019-04-23</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/Selenium/">Selenium</a>
+                </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    a minute read (About 221 words)
+                    a minute read (About 216 words)
                 </span>
                 
                 
@@ -265,56 +277,9 @@
             <iframe width="100%" height="400" src="https://www.youtube.com/embed/sES_zXsDlxs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <h3 id="Selenium-Print-Table-Data"><a href="#Selenium-Print-Table-Data" class="headerlink" title="Selenium : Print Table Data"></a>Selenium : Print Table Data</h3><p>We can find every web element using its tag name. table has  <strong>tr tag</strong>  for row.<br>In Selenium WebDriver we can use  <strong>driver.findElements(By.tagName(“tr”)</strong> to find all rows data.<br>Check below image and Selenium code for the same:</p>
-<p><img src="https://seleniumpoint.com/images/table.png" alt="get table data using selenium webdriver">  </p>
-<pre><code>            package scripts;
+<p><img src="https://seleniumpoint.com/images/table.png" alt="get table data using selenium webdriver"></p>
+<figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">package</span> scripts;</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">import</span> org.openqa.selenium.By;</span><br><span class="line"><span class="hljs-keyword">import</span> org.openqa.selenium.WebDriver;</span><br><span class="line"><span class="hljs-keyword">import</span> org.openqa.selenium.WebElement;</span><br><span class="line"><span class="hljs-keyword">import</span> org.openqa.selenium.firefox.FirefoxDriver;</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">printTableData</span> </span>&#123;</span><br><span class="line"></span><br><span class="line"> <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> InterruptedException </span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//set GeckoDriver path for FireFox browser</span></span><br><span class="line">  System.setProperty(<span class="hljs-string">"webdriver.gecko.driver"</span>, <span class="hljs-string">"C:\\harshal personal\\selenium\\geckodriver-v0.10.0-win64\\geckodriver.exe"</span>);</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//Create Browser object</span></span><br><span class="line">  WebDriver driver = <span class="hljs-keyword">new</span> FirefoxDriver();</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//open URL</span></span><br><span class="line">  driver.get(<span class="hljs-string">"https://www.seleniumpoint.com/testwebsite.php"</span>);</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//maximize the window</span></span><br><span class="line">  driver.manage().window().maximize();</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//login to test web site</span></span><br><span class="line">  driver.findElement(By.id(<span class="hljs-string">"remail"</span>)).sendKeys(<span class="hljs-string">"test@seleniumpoint.com "</span>);</span><br><span class="line">  driver.findElement(By.id(<span class="hljs-string">"rpassword"</span>)).sendKeys(<span class="hljs-string">"test@123"</span>);</span><br><span class="line">  driver.findElement(By.id(<span class="hljs-string">"rsubmit"</span>)).click();</span><br><span class="line"></span><br><span class="line">  Thread.sleep(<span class="hljs-number">3000</span>);</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//Get Row Count</span></span><br><span class="line">  <span class="hljs-keyword">int</span> rowCount = driver.findElements(By.tagName(<span class="hljs-string">"tr"</span>)).size();</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//Get Column Count</span></span><br><span class="line">  <span class="hljs-keyword">int</span> colCount = driver.findElements(By.xpath(<span class="hljs-string">"//thead//th"</span>)).size();</span><br><span class="line"></span><br><span class="line">  System.out.println(<span class="hljs-string">"Row count :"</span> + rowCount);</span><br><span class="line">  System.out.println(<span class="hljs-string">"Col count :"</span> + colCount);</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//Print table Data</span></span><br><span class="line"></span><br><span class="line">  <span class="hljs-keyword">for</span> (WebElement tdata: driver.findElements(By.tagName(<span class="hljs-string">"tr"</span>))) &#123;</span><br><span class="line">   System.out.println(tdata.getText());</span><br><span class="line">  &#125;</span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-            import org.openqa.selenium.By;
-            import org.openqa.selenium.WebDriver;
-            import org.openqa.selenium.WebElement;
-            import org.openqa.selenium.firefox.FirefoxDriver;
-
-            public class printTableData {
-
-            public static void main(String[] args) throws InterruptedException {
-
-            //set GeckoDriver path for FireFox browser
-            System.setProperty(&quot;webdriver.gecko.driver&quot;, &quot;C:\\harshal personal\\selenium\\geckodriver-v0.10.0-win64\\geckodriver.exe&quot;);
-
-            //Create Browser object
-            WebDriver driver=new FirefoxDriver();
-
-            //open URL
-            driver.get(&quot;[http://www.seleniumpoint.com/testwebsite.php](http://www.seleniumpoint.com/testwebsite.php)&quot;);
-
-            //maximize the window
-            driver.manage().window().maximize();
-
-            //login to test web site
-            driver.findElement(By.id(&quot;remail&quot;)).sendKeys(&quot;test@seleniumpoint.com &quot;);
-            driver.findElement(By.id(&quot;rpassword&quot;)).sendKeys(&quot;test@123&quot;);
-            driver.findElement(By.id(&quot;rsubmit&quot;)).click();
-
-            Thread.sleep(3000);
-
-            //Get Row Count
-            int rowCount=driver.findElements(By.tagName(&quot;tr&quot;)).size();
-
-            //Get Column Count
-            int colCount=driver.findElements(By.xpath(&quot;//thead//th&quot;)).size();
-
-            System.out.println(&quot;Row count :&quot; + rowCount);
-            System.out.println(&quot;Col count :&quot; + colCount);
-
-            //Print table Data
-
-            for(WebElement tdata:driver.findElements(By.tagName(&quot;tr&quot;)))
-            {
-            System.out.println(tdata.getText());
-        }
-    }
-
-}
-</code></pre>
         </div>
         
         
@@ -335,13 +300,17 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-04-23T02:50:28.000Z">2019-04-23</time>
+                <time class="level-item has-text-grey" datetime="2019-04-23T02:50:00.000Z">2019-04-23</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/Selenium/">Selenium</a>
+                </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    a minute read (About 152 words)
+                    a minute read (About 153 words)
                 </span>
                 
                 
@@ -357,46 +326,8 @@
             <iframe width="100%" height="400" src="https://www.youtube.com/embed/u4iBuV-_TLo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <h3 id="Print-All-Web-Page-Links"><a href="#Print-All-Web-Page-Links" class="headerlink" title="Print All Web Page Links"></a>Print All Web Page Links</h3><p>We can find every web element using its tag name. Links has  <strong>anchor tag (a)</strong>.<br>In Selenium WebDriver we can use  <strong>driver.findElements(By.tagName(“a”)</strong> to find all links on web page<br><strong>Run the below Code:</strong></p>
-<pre><code>            package scripts;
+<figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">package</span> scripts;</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">import</span> org.openqa.<span class="hljs-keyword">package</span> scripts;</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">import</span> org.openqa.selenium.By;</span><br><span class="line"><span class="hljs-keyword">import</span> org.openqa.selenium.WebDriver;</span><br><span class="line"><span class="hljs-keyword">import</span> org.openqa.selenium.WebElement;</span><br><span class="line"><span class="hljs-keyword">import</span> org.openqa.selenium.firefox.FirefoxDriver;</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">printAllLinks</span> </span>&#123;</span><br><span class="line"></span><br><span class="line"> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> linkCount = <span class="hljs-number">0</span>;</span><br><span class="line"></span><br><span class="line"> <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//set GeckoDriver path for FireFox browser</span></span><br><span class="line">  System.setProperty(<span class="hljs-string">"webdriver.gecko.driver"</span>, <span class="hljs-string">"C:\\harshal personal\\selenium\\geckodriver-v0.10.0-win64\\geckodriver.exe"</span>);</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//Create Browser object</span></span><br><span class="line">  WebDriver driver = <span class="hljs-keyword">new</span> FirefoxDriver();</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//Open URL</span></span><br><span class="line">  driver.get(<span class="hljs-string">"[http://www.seleniumpoint.com](http://www.seleniumpoint.com/)"</span>);</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//Get links in for each loop</span></span><br><span class="line"></span><br><span class="line">  <span class="hljs-keyword">for</span> (WebElement links: driver.findElements(By.tagName(<span class="hljs-string">"a"</span>))) &#123;</span><br><span class="line">   System.out.println(links.getText());</span><br><span class="line">   linkCount++;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//Print Link Count</span></span><br><span class="line"></span><br><span class="line">  System.out.println(<span class="hljs-string">"Total Links on Page : "</span> + linkCount);</span><br><span class="line"></span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-            import org.openqa.package scripts;
-
-            import org.openqa.selenium.By;
-            import org.openqa.selenium.WebDriver;
-            import org.openqa.selenium.WebElement;
-            import org.openqa.selenium.firefox.FirefoxDriver;
-
-            public class printAllLinks {
-
-            static int linkCount=0;
-
-            public static void main(String[] args) {
-
-            //set GeckoDriver path for FireFox browser
-            System.setProperty(&quot;webdriver.gecko.driver&quot;, &quot;C:\\harshal personal\\selenium\\geckodriver-v0.10.0-win64\\geckodriver.exe&quot;);
-
-            //Create Browser object
-            WebDriver driver=new FirefoxDriver();
-
-            //Open URL
-            driver.get(&quot;[http://www.seleniumpoint.com](http://www.seleniumpoint.com/)&quot;);
-
-            //Get links in for each loop
-
-            for(WebElement links : driver.findElements(By.tagName(&quot;a&quot;)))
-            {
-            System.out.println(links.getText());
-            linkCount++;
-        }
-
-        //Print Link Count
-
-        System.out.println(&quot;Total Links on Page : &quot;+linkCount);
-
-    }
-
-}
-</code></pre>
         </div>
         
         
@@ -417,13 +348,17 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-04-23T02:03:57.000Z">2019-04-23</time>
+                <time class="level-item has-text-grey" datetime="2019-04-23T02:03:00.000Z">2019-04-23</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/Selenium/">Selenium</a>
+                </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    2 minutes read (About 254 words)
+                    2 minutes read (About 249 words)
                 </span>
                 
                 
@@ -446,62 +381,9 @@
 <li><strong>4. sendKeys()</strong>  To send some text to the alert on web page</li>
 </ul>
 <p>Find below image and selenium code for the same</p>
-<p><img src="https://seleniumpoint.com/images/alert.png" alt="selenium webdriver window handling">  </p>
-<pre><code>        package scripts;
+<p><img src="https://seleniumpoint.com/images/alert.png" alt="selenium webdriver window handling"></p>
+<figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">package</span> scripts;</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">import</span> org.openqa.selenium.Alert;</span><br><span class="line"><span class="hljs-keyword">import</span> org.openqa.selenium.By;</span><br><span class="line"><span class="hljs-keyword">import</span> org.openqa.selenium.WebDriver;</span><br><span class="line"><span class="hljs-keyword">import</span> org.openqa.selenium.chrome.ChromeDriver;</span><br><span class="line"><span class="hljs-keyword">import</span> org.openqa.selenium.firefox.FirefoxDriver;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">alertHandling</span> </span>&#123;</span><br><span class="line"></span><br><span class="line"> <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> InterruptedException </span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//set Chromedriver path for Chrome browser</span></span><br><span class="line">  System.setProperty(<span class="hljs-string">"webdriver.chrome.driver"</span>, <span class="hljs-string">"C:\\harshal personal\\selenium\\chromedriver.exe"</span>);</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//create WebDriver object for Chrome</span></span><br><span class="line">  WebDriver driver = <span class="hljs-keyword">new</span> ChromeDriver();</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//open URL</span></span><br><span class="line">  driver.get(<span class="hljs-string">"https://www.seleniumpoint.com/testwebsite.php"</span>);</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//maximize the window</span></span><br><span class="line">  driver.manage().window().maximize();</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//login to test web site</span></span><br><span class="line">  driver.findElement(By.id(<span class="hljs-string">"remail"</span>)).sendKeys(<span class="hljs-string">"test@seleniumpoint.com "</span>);</span><br><span class="line">  driver.findElement(By.id(<span class="hljs-string">"rpassword"</span>)).sendKeys(<span class="hljs-string">"test@123"</span>);</span><br><span class="line">  driver.findElement(By.id(<span class="hljs-string">"rsubmit"</span>)).click();</span><br><span class="line"></span><br><span class="line">  Thread.sleep(<span class="hljs-number">3000</span>);</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//click on View link of third product to open window: Car Seat</span></span><br><span class="line">  driver.findElement(By.xpath(<span class="hljs-string">"//div[@class='product4View']/a"</span>)).click();</span><br><span class="line"></span><br><span class="line">  Thread.sleep(<span class="hljs-number">3000</span>);</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//get alert text</span></span><br><span class="line">  String alertText = driver.switchTo().alert().getText();</span><br><span class="line">  System.out.println(<span class="hljs-string">"Alert Text is :"</span> + alertText);</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//Send value to alert</span></span><br><span class="line">  driver.switchTo().alert().sendKeys(<span class="hljs-string">"01harshal.shewale@gmail.com"</span>);</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//accept alert</span></span><br><span class="line">  driver.switchTo().alert().accept();</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//dismiss alert</span></span><br><span class="line">  <span class="hljs-comment">//driver.switchTo().alert().dismiss();</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-        import org.openqa.selenium.Alert;
-        import org.openqa.selenium.By;
-        import org.openqa.selenium.WebDriver;
-        import org.openqa.selenium.chrome.ChromeDriver;
-        import org.openqa.selenium.firefox.FirefoxDriver;
-
-
-        public class alertHandling {
-
-        public static void main(String[] args) throws InterruptedException {
-
-        //set Chromedriver path for Chrome browser
-        System.setProperty(&quot;webdriver.chrome.driver&quot;,&quot;C:\\harshal personal\\selenium\\chromedriver.exe&quot;);
-
-        //create WebDriver object for Chrome
-        WebDriver driver=new ChromeDriver();
-
-        //open URL
-        driver.get(&quot;[http://www.seleniumpoint.com/testwebsite.php](http://www.seleniumpoint.com/testwebsite.php)&quot;);
-
-        //maximize the window
-        driver.manage().window().maximize();
-
-        //login to test web site
-        driver.findElement(By.id(&quot;remail&quot;)).sendKeys(&quot;test@seleniumpoint.com &quot;);
-        driver.findElement(By.id(&quot;rpassword&quot;)).sendKeys(&quot;test@123&quot;);
-        driver.findElement(By.id(&quot;rsubmit&quot;)).click();
-
-        Thread.sleep(3000);
-
-        //click on View link of third product to open window: Car Seat
-        driver.findElement(By.xpath(&quot;//div[@class=&apos;product4View&apos;]/a&quot;)).click();
-
-        Thread.sleep(3000);
-
-        //get alert text
-        String alertText=driver.switchTo().alert().getText();
-        System.out.println(&quot;Alert Text is :&quot; + alertText);
-
-        //Send value to alert
-        driver.switchTo().alert().sendKeys(&quot;01harshal.shewale@gmail.com&quot;);
-
-        //accept alert
-        driver.switchTo().alert().accept();
-
-        //dismiss alert
-        //driver.switchTo().alert().dismiss();
-
-
-    }
-
-}
-</code></pre>
         </div>
         
         
@@ -522,13 +404,17 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-04-23T02:02:39.000Z">2019-04-23</time>
+                <time class="level-item has-text-grey" datetime="2019-04-23T02:02:00.000Z">2019-04-23</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/Selenium/">Selenium</a>
+                </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    2 minutes read (About 301 words)
+                    2 minutes read (About 296 words)
                 </span>
                 
                 
@@ -544,73 +430,9 @@
             <iframe width="100%" height="400" src="https://www.youtube.com/embed/FfHtNvdfqWE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <h3 id="Selenium-Frame-Handling"><a href="#Selenium-Frame-Handling" class="headerlink" title="Selenium : Frame Handling"></a>Selenium : Frame Handling</h3><p>Same like window, for automating the content in frame we have to use  <strong>switchTo().frame(“frameName”);</strong><br>(with given example below, frame is situated in new window, so we must have to switch to window first and then switch to frame to perform operations.)<br>Run the below Code:</p>
-<p><img src="https://seleniumpoint.com/images/framehandling.png" alt="selenium webdriver window handling">  </p>
-<pre><code>            package scripts;
+<p><img src="https://seleniumpoint.com/images/framehandling.png" alt="selenium webdriver window handling"></p>
+<figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">package</span> scripts;</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">import</span> org.openqa.selenium.By;</span><br><span class="line"><span class="hljs-keyword">import</span> org.openqa.selenium.WebDriver;</span><br><span class="line"><span class="hljs-keyword">import</span> org.openqa.selenium.chrome.ChromeDriver;</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">/*</span></span><br><span class="line"><span class="hljs-comment"> * Purpose of script is click on AddToCart button in new frame</span></span><br><span class="line"><span class="hljs-comment"> * Here frame is situated in new window , so first we have to switch to window and switch to frame</span></span><br><span class="line"><span class="hljs-comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">seleniumFrameHandling</span> </span>&#123;</span><br><span class="line"></span><br><span class="line"> <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> InterruptedException </span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//set chromedriver path for Chrome browser</span></span><br><span class="line">  System.setProperty(<span class="hljs-string">"webdriver.chrome.driver"</span>, <span class="hljs-string">"C:\\harshal personal\\selenium\\chromedriver.exe"</span>);</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//create WebDriver object for Chrome</span></span><br><span class="line">  WebDriver driver = <span class="hljs-keyword">new</span> ChromeDriver();</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//open URL</span></span><br><span class="line">  driver.get(<span class="hljs-string">"https://www.seleniumpoint.com/testwebsite.php"</span>);</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//maximize the window</span></span><br><span class="line">  driver.manage().window().maximize();</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//login to test web site</span></span><br><span class="line">  driver.findElement(By.id(<span class="hljs-string">"remail"</span>)).sendKeys(<span class="hljs-string">"test@seleniumpoint.com "</span>);</span><br><span class="line">  driver.findElement(By.id(<span class="hljs-string">"rpassword"</span>)).sendKeys(<span class="hljs-string">"test@123"</span>);</span><br><span class="line">  driver.findElement(By.id(<span class="hljs-string">"rsubmit"</span>)).click();</span><br><span class="line"></span><br><span class="line">  Thread.sleep(<span class="hljs-number">4000</span>);</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//First Get parent window,means current window handle</span></span><br><span class="line">  String parentWindow = driver.getWindowHandle();</span><br><span class="line">  System.out.println(<span class="hljs-string">"Parent Window Title "</span> + driver.getTitle());</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//click on View link of third product to open window: Car Seat</span></span><br><span class="line">  driver.findElement(By.xpath(<span class="hljs-string">"//div[@class='product3View']/a"</span>)).click();</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//Now here is the New Tab handling code</span></span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//Get All Tabs or Window handles and iterate using for each loop</span></span><br><span class="line">  <span class="hljs-keyword">for</span> (String handle: driver.getWindowHandles()) &#123;</span><br><span class="line">   System.out.println(handle);</span><br><span class="line">   driver.switchTo().window(handle);</span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//switch to frame using frame name</span></span><br><span class="line">  driver.switchTo().frame(<span class="hljs-string">"carseatframe"</span>);</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//Click on Cart Button</span></span><br><span class="line">  driver.findElement(By.xpath(<span class="hljs-string">"//button"</span>)).click();</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//Go back to Parent window</span></span><br><span class="line">  driver.switchTo().window(parentWindow);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-            import org.openqa.selenium.By;
-            import org.openqa.selenium.WebDriver;
-            import org.openqa.selenium.chrome.ChromeDriver;
-
-            /*
-            * Purpose of script is click on AddToCart button in new frame
-            * Here frame is situated in new window , so first we have to switch to window and switch to frame
-            */
-
-            public class seleniumFrameHandling {
-
-            public static void main(String[] args) throws InterruptedException {
-
-            //set chromedriver path for Chrome browser
-            System.setProperty(&quot;webdriver.chrome.driver&quot;,&quot;C:\\harshal personal\\selenium\\chromedriver.exe&quot;);
-
-            //create WebDriver object for Chrome
-            WebDriver driver=new ChromeDriver();
-
-            //open URL
-            driver.get(&quot;[http://www.seleniumpoint.com/testwebsite.php](http://www.seleniumpoint.com/testwebsite.php)&quot;);
-
-            //maximize the window
-            driver.manage().window().maximize();
-
-            //login to test web site
-            driver.findElement(By.id(&quot;remail&quot;)).sendKeys(&quot;test@seleniumpoint.com &quot;);
-            driver.findElement(By.id(&quot;rpassword&quot;)).sendKeys(&quot;test@123&quot;);
-            driver.findElement(By.id(&quot;rsubmit&quot;)).click();
-
-            Thread.sleep(4000);
-
-            //First Get parent window,means current window handle
-            String parentWindow=driver.getWindowHandle();
-            System.out.println(&quot;Parent Window Title &quot;+driver.getTitle());
-
-            //click on View link of third product to open window: Car Seat
-            driver.findElement(By.xpath(&quot;//div[@class=&apos;product3View&apos;]/a&quot;)).click();
-
-            //Now here is the New Tab handling code
-
-            //Get All Tabs or Window handles and iterate using for each loop
-            for(String handle:driver.getWindowHandles())
-            {
-            System.out.println(handle);
-            driver.switchTo().window(handle);
-
-        }
-
-        //switch to frame using frame name
-        driver.switchTo().frame(&quot;carseatframe&quot;);
-
-        //Click on Cart Button
-        driver.findElement(By.xpath(&quot;//button&quot;)).click();
-
-        //Go back to Parent window
-        driver.switchTo().window(parentWindow);
-
-
-
-    }
-
-}
-</code></pre>
         </div>
         
         
@@ -631,13 +453,17 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-04-23T02:00:51.000Z">2019-04-23</time>
+                <time class="level-item has-text-grey" datetime="2019-04-23T02:00:00.000Z">2019-04-23</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/Selenium/">Selenium</a>
+                </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    2 minutes read (About 280 words)
+                    2 minutes read (About 275 words)
                 </span>
                 
                 
@@ -653,67 +479,9 @@
             <iframe width="100%" height="400" src="https://www.youtube.com/embed/rghtEoGQvmo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <h3 id="Selenium-New-Tab-Window-handling"><a href="#Selenium-New-Tab-Window-handling" class="headerlink" title="Selenium : New Tab Window handling"></a>Selenium : New Tab Window handling</h3><p>Tab is same like window. There is no difference with respect to selenium. There is difference at code level, I mean HTML code level. But for selenium automation both are the same.So, automating the new tab content is same like window.<br>You have to use switchTo().window()<br>Run below code for the same.</p>
-<p><img src="https://seleniumpoint.com/images/newtabwindow.png" alt="selenium webdriver window handling">  </p>
-<pre><code>            package scripts;
+<p><img src="https://seleniumpoint.com/images/newtabwindow.png" alt="selenium webdriver window handling"></p>
+<figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">package</span> scripts;</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">import</span> org.openqa.selenium.By;</span><br><span class="line"><span class="hljs-keyword">import</span> org.openqa.selenium.WebDriver;</span><br><span class="line"><span class="hljs-keyword">import</span> org.openqa.selenium.chrome.ChromeDriver;</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">/*</span></span><br><span class="line"><span class="hljs-comment"> * Purpose of script is click on AddToCart button in new tab</span></span><br><span class="line"><span class="hljs-comment"> *</span></span><br><span class="line"><span class="hljs-comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">newTabHandling</span> </span>&#123;</span><br><span class="line"></span><br><span class="line"> <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> InterruptedException </span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//set chromedriver path for Chrome browser</span></span><br><span class="line">  System.setProperty(<span class="hljs-string">"webdriver.chrome.driver"</span>, <span class="hljs-string">"C:\\harshal personal\\selenium\\chromedriver.exe"</span>);</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//create WebDriver object for Chrome</span></span><br><span class="line">  WebDriver driver = <span class="hljs-keyword">new</span> ChromeDriver();</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//open URL</span></span><br><span class="line">  driver.get(<span class="hljs-string">"https://www.seleniumpoint.com/testwebsite.php"</span>);</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//maximize the window</span></span><br><span class="line">  driver.manage().window().maximize();</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//login to test web site</span></span><br><span class="line">  driver.findElement(By.id(<span class="hljs-string">"remail"</span>)).sendKeys(<span class="hljs-string">"test@seleniumpoint.com "</span>);</span><br><span class="line">  driver.findElement(By.id(<span class="hljs-string">"rpassword"</span>)).sendKeys(<span class="hljs-string">"test@123"</span>);</span><br><span class="line">  driver.findElement(By.id(<span class="hljs-string">"rsubmit"</span>)).click();</span><br><span class="line"></span><br><span class="line">  Thread.sleep(<span class="hljs-number">4000</span>);</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//First Get parent window,means current window handle</span></span><br><span class="line">  String parentWindow = driver.getWindowHandle();</span><br><span class="line">  System.out.println(<span class="hljs-string">"Parent Window Title "</span> + driver.getTitle());</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//click on View link of second product to open window: Bag</span></span><br><span class="line">  driver.findElement(By.xpath(<span class="hljs-string">"//div[@class='product2View']/a"</span>)).click();</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//Now here is the New Tab handling code</span></span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//Get All Tabs or Window handles and iterate using for each loop</span></span><br><span class="line">  <span class="hljs-keyword">for</span> (String handle: driver.getWindowHandles()) &#123;</span><br><span class="line">   System.out.println(handle);</span><br><span class="line">   driver.switchTo().window(handle);</span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//Click on Cart Button</span></span><br><span class="line">  driver.findElement(By.xpath(<span class="hljs-string">"//button"</span>)).click();</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//Go back to Parent window</span></span><br><span class="line">  driver.switchTo().window(parentWindow);</span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-            import org.openqa.selenium.By;
-            import org.openqa.selenium.WebDriver;
-            import org.openqa.selenium.chrome.ChromeDriver;
-
-            /*
-            * Purpose of script is click on AddToCart button in new tab
-            *
-            */
-
-            public class newTabHandling {
-
-            public static void main(String[] args) throws InterruptedException {
-
-            //set chromedriver path for Chrome browser
-            System.setProperty(&quot;webdriver.chrome.driver&quot;,&quot;C:\\harshal personal\\selenium\\chromedriver.exe&quot;);
-
-            //create WebDriver object for Chrome
-            WebDriver driver=new ChromeDriver();
-
-            //open URL
-            driver.get(&quot;[http://www.seleniumpoint.com/testwebsite.php](http://www.seleniumpoint.com/testwebsite.php)&quot;);
-
-            //maximize the window
-            driver.manage().window().maximize();
-
-            //login to test web site
-            driver.findElement(By.id(&quot;remail&quot;)).sendKeys(&quot;test@seleniumpoint.com &quot;);
-            driver.findElement(By.id(&quot;rpassword&quot;)).sendKeys(&quot;test@123&quot;);
-            driver.findElement(By.id(&quot;rsubmit&quot;)).click();
-
-            Thread.sleep(4000);
-
-            //First Get parent window,means current window handle
-            String parentWindow=driver.getWindowHandle();
-            System.out.println(&quot;Parent Window Title &quot;+driver.getTitle());
-
-            //click on View link of second product to open window: Bag
-            driver.findElement(By.xpath(&quot;//div[@class=&apos;product2View&apos;]/a&quot;)).click();
-
-            //Now here is the New Tab handling code
-
-            //Get All Tabs or Window handles and iterate using for each loop
-            for(String handle:driver.getWindowHandles())
-            {
-            System.out.println(handle);
-            driver.switchTo().window(handle);
-
-        }
-
-        //Click on Cart Button
-        driver.findElement(By.xpath(&quot;//button&quot;)).click();
-
-        //Go back to Parent window
-        driver.switchTo().window(parentWindow);
-    }
-
-}
-</code></pre>
         </div>
         
         
@@ -734,13 +502,17 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-04-23T01:57:11.000Z">2019-04-23</time>
+                <time class="level-item has-text-grey" datetime="2019-04-23T01:57:00.000Z">2019-04-23</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/Selenium/">Selenium</a>
+                </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    2 minutes read (About 274 words)
+                    2 minutes read (About 269 words)
                 </span>
                 
                 
@@ -756,67 +528,9 @@
             <iframe width="100%" height="400" src="https://www.youtube.com/embed/PJUBI2APyN0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <h3 id="Selenium-Window-handling"><a href="#Selenium-Window-handling" class="headerlink" title="Selenium : Window handling"></a>Selenium : Window handling</h3><p>Many times on web application we see contents opens in window. So, for automating the newly opened window using selenium, we must have to switch to that window.<br>Here is a code for the same. You can try this code by yourself. Just copy the code below and run locally using eclipse.</p>
-<p><img src="https://seleniumpoint.com/images/windowhandling.png" alt="selenium webdriver window handling">  </p>
-<pre><code>            package scripts;
+<p><img src="https://seleniumpoint.com/images/windowhandling.png" alt="selenium webdriver window handling"></p>
+<figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">package</span> scripts;</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">import</span> org.openqa.selenium.By;</span><br><span class="line"><span class="hljs-keyword">import</span> org.openqa.selenium.WebDriver;</span><br><span class="line"><span class="hljs-keyword">import</span> org.openqa.selenium.chrome.ChromeDriver;</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">/*</span></span><br><span class="line"><span class="hljs-comment"> * Purpose of script is click on AddToCart button in new Window</span></span><br><span class="line"><span class="hljs-comment"> *</span></span><br><span class="line"><span class="hljs-comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">windowHandling</span> </span>&#123;</span><br><span class="line"></span><br><span class="line"> <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> InterruptedException </span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//set chromedriver path for Chrome browser</span></span><br><span class="line">  System.setProperty(<span class="hljs-string">"webdriver.chrome.driver"</span>, <span class="hljs-string">"C:\\harshal personal\\selenium\\chromedriver.exe"</span>);</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//create WebDriver object for Chrome</span></span><br><span class="line">  WebDriver driver = <span class="hljs-keyword">new</span> ChromeDriver();</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//open URL</span></span><br><span class="line">  driver.get(<span class="hljs-string">"https://www.seleniumpoint.com/testwebsite.php"</span>);</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//maximize the window</span></span><br><span class="line">  driver.manage().window().maximize();</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//login to test web site</span></span><br><span class="line">  driver.findElement(By.id(<span class="hljs-string">"remail"</span>)).sendKeys(<span class="hljs-string">"test@seleniumpoint.com "</span>);</span><br><span class="line">  driver.findElement(By.id(<span class="hljs-string">"rpassword"</span>)).sendKeys(<span class="hljs-string">"test@123"</span>);</span><br><span class="line">  driver.findElement(By.id(<span class="hljs-string">"rsubmit"</span>)).click();</span><br><span class="line"></span><br><span class="line">  Thread.sleep(<span class="hljs-number">4000</span>);</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//First Get parent window,means current window handle</span></span><br><span class="line">  String parentWindow = driver.getWindowHandle();</span><br><span class="line">  System.out.println(<span class="hljs-string">"Parent Window Title "</span> + driver.getTitle());</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//click on View link of first product to open window: Nikon D50</span></span><br><span class="line">  driver.findElement(By.xpath(<span class="hljs-string">"//div[@class='product1View']/a"</span>)).click();</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//Now here is the Window handling code</span></span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//Get All windows handles and iterate using for each loop</span></span><br><span class="line">  <span class="hljs-keyword">for</span> (String handle: driver.getWindowHandles()) &#123;</span><br><span class="line">   System.out.println(handle);</span><br><span class="line">   driver.switchTo().window(handle);</span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//Click on Cart Button</span></span><br><span class="line">  driver.findElement(By.xpath(<span class="hljs-string">"//button"</span>)).click();</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//Go back to Parent window</span></span><br><span class="line">  driver.switchTo().window(parentWindow);</span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-            import org.openqa.selenium.By;
-            import org.openqa.selenium.WebDriver;
-            import org.openqa.selenium.chrome.ChromeDriver;
-
-            /*
-            * Purpose of script is click on AddToCart button in new Window
-            *
-            */
-
-            public class windowHandling {
-
-            public static void main(String[] args) throws InterruptedException {
-
-            //set chromedriver path for Chrome browser
-            System.setProperty(&quot;webdriver.chrome.driver&quot;,&quot;C:\\harshal personal\\selenium\\chromedriver.exe&quot;);
-
-            //create WebDriver object for Chrome
-            WebDriver driver=new ChromeDriver();
-
-            //open URL
-            driver.get(&quot;[http://www.seleniumpoint.com/testwebsite.php](http://www.seleniumpoint.com/testwebsite.php)&quot;);
-
-            //maximize the window
-            driver.manage().window().maximize();
-
-            //login to test web site
-            driver.findElement(By.id(&quot;remail&quot;)).sendKeys(&quot;test@seleniumpoint.com &quot;);
-            driver.findElement(By.id(&quot;rpassword&quot;)).sendKeys(&quot;test@123&quot;);
-            driver.findElement(By.id(&quot;rsubmit&quot;)).click();
-
-            Thread.sleep(4000);
-
-            //First Get parent window,means current window handle
-            String parentWindow=driver.getWindowHandle();
-            System.out.println(&quot;Parent Window Title &quot;+driver.getTitle());
-
-            //click on View link of first product to open window: Nikon D50
-            driver.findElement(By.xpath(&quot;//div[@class=&apos;product1View&apos;]/a&quot;)).click();
-
-            //Now here is the Window handling code
-
-            //Get All windows handles and iterate using for each loop
-            for(String handle:driver.getWindowHandles())
-            {
-            System.out.println(handle);
-            driver.switchTo().window(handle);
-
-        }
-
-        //Click on Cart Button
-        driver.findElement(By.xpath(&quot;//button&quot;)).click();
-
-        //Go back to Parent window
-        driver.switchTo().window(parentWindow);
-    }
-
-}
-</code></pre>
         </div>
         
         
@@ -837,13 +551,17 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-04-23T01:54:16.000Z">2019-04-23</time>
+                <time class="level-item has-text-grey" datetime="2019-04-23T01:54:00.000Z">2019-04-23</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/Selenium/">Selenium</a>
+                </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    2 minutes read (About 245 words)
+                    2 minutes read (About 240 words)
                 </span>
                 
                 
@@ -865,58 +583,9 @@
 <li><strong>3. selectByVisibleText</strong></li>
 </ul>
 <p><strong>selectByIndex</strong>  means select dropdown value using its index. Index starts from zero.<br>for  <strong>selectByValue</strong>  and  <strong>selectByVisibleText</strong>  , inspect using firebug to see its value and visible text.(Value and visible text can be same or different)<br>Refer below image and selenium code for the same</p>
-<p><img src="https://seleniumpoint.com/images/dropdown.png" alt="selenium webdriver window handling">  </p>
-<pre><code>        package scripts;
+<p><img src="https://seleniumpoint.com/images/dropdown.png" alt="selenium webdriver window handling"></p>
+<figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">package</span> scripts;</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">import</span> org.openqa.selenium.By;</span><br><span class="line"><span class="hljs-keyword">import</span> org.openqa.selenium.WebDriver;</span><br><span class="line"><span class="hljs-keyword">import</span> org.openqa.selenium.WebElement;</span><br><span class="line"><span class="hljs-keyword">import</span> org.openqa.selenium.chrome.ChromeDriver;</span><br><span class="line"><span class="hljs-keyword">import</span> org.openqa.selenium.support.ui.Select;</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">selectDropdownValues</span> </span>&#123;</span><br><span class="line"></span><br><span class="line"> <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> InterruptedException </span>&#123;</span><br><span class="line">  <span class="hljs-comment">// TODO Auto-generated method stub</span></span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//set chromedriver path for Chrome browser</span></span><br><span class="line">  System.setProperty(<span class="hljs-string">"webdriver.chrome.driver"</span>, <span class="hljs-string">"C:\\harshal personal\\selenium\\chromedriver.exe"</span>);</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//create WebDriver object for Chrome</span></span><br><span class="line">  WebDriver driver = <span class="hljs-keyword">new</span> ChromeDriver();</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//open URL</span></span><br><span class="line">  driver.get(<span class="hljs-string">"https://www.seleniumpoint.com/testwebsite.php"</span>);</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//maximize the window</span></span><br><span class="line">  driver.manage().window().maximize();</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//get the Locator of drop down box</span></span><br><span class="line">  WebElement dropdown = driver.findElement(By.name(<span class="hljs-string">"ustate"</span>));</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//Create object of Select Class</span></span><br><span class="line">  Select select = <span class="hljs-keyword">new</span> Select(dropdown);</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//We can select Drop down value by three ways:</span></span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//Method 1: Select drop down value using index</span></span><br><span class="line">  select.selectByIndex(<span class="hljs-number">4</span>);</span><br><span class="line"></span><br><span class="line">  Thread.sleep(<span class="hljs-number">2000</span>);</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">// Method 2: Select drop down value using index</span></span><br><span class="line">  select.selectByValue(<span class="hljs-string">"Chhattisgarh"</span>);</span><br><span class="line"></span><br><span class="line">  Thread.sleep(<span class="hljs-number">2000</span>);</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//Method 3: Select drop down value using index</span></span><br><span class="line">  select.selectByVisibleText(<span class="hljs-string">"Maharashtra"</span>);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-        import org.openqa.selenium.By;
-        import org.openqa.selenium.WebDriver;
-        import org.openqa.selenium.WebElement;
-        import org.openqa.selenium.chrome.ChromeDriver;
-        import org.openqa.selenium.support.ui.Select;
-
-        public class selectDropdownValues {
-
-        public static void main(String[] args) throws InterruptedException {
-        // TODO Auto-generated method stub
-
-        //set chromedriver path for Chrome browser
-        System.setProperty(&quot;webdriver.chrome.driver&quot;,&quot;C:\\harshal personal\\selenium\\chromedriver.exe&quot;);
-
-        //create WebDriver object for Chrome
-        WebDriver driver=new ChromeDriver();
-
-        //open URL
-        driver.get(&quot;[http://www.seleniumpoint.com/testwebsite.php](http://www.seleniumpoint.com/testwebsite.php)&quot;);
-
-        //maximize the window
-        driver.manage().window().maximize();
-
-        //get the Locator of drop down box
-        WebElement dropdown=driver.findElement(By.name(&quot;ustate&quot;));
-
-        //Create object of Select Class
-        Select select=new Select(dropdown);
-
-        //We can select Drop down value by three ways:
-
-        //Method 1: Select drop down value using index
-        select.selectByIndex(4);
-
-        Thread.sleep(2000);
-
-        // Method 2: Select drop down value using index
-        select.selectByValue(&quot;Chhattisgarh&quot;);
-
-        Thread.sleep(2000);
-
-        //Method 3: Select drop down value using index
-        select.selectByVisibleText(&quot;Maharashtra&quot;);
-
-
-    }
-
-}
-</code></pre>
         </div>
         
         
@@ -937,13 +606,17 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-04-23T01:51:44.000Z">2019-04-23</time>
+                <time class="level-item has-text-grey" datetime="2019-04-23T01:51:00.000Z">2019-04-23</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/Selenium/">Selenium</a>
+                </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    3 minutes read (About 479 words)
+                    3 minutes read (About 473 words)
                 </span>
                 
                 
@@ -959,69 +632,12 @@
             <iframe width="100%" height="400" src="https://www.youtube.com/embed/tCDM4ZpAp50" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <h3 id="Selenium-WebDriver-Wait"><a href="#Selenium-WebDriver-Wait" class="headerlink" title="Selenium WebDriver Wait"></a>Selenium WebDriver Wait</h3><p>Most of the web application are using AJAX techniques. When a page is loaded to browser, the elements within that page may load at different time intervals. This makes locating elements difficult, if the element is not present in the DOM, it will raise exceptions like ElementNotVisibleException, ElementNotPresentExceptionetc.<br>Using waits, we can solve this issue.<br>So, let us discuss about different selenium waits available in Selenium WebDriver:</p>
-<h4 id="1-Implicit-Wait"><a href="#1-Implicit-Wait" class="headerlink" title="1.Implicit Wait"></a>1.Implicit Wait</h4><p>It is used to set default wait time between two steps. For example, if you want to put wait for 30 seconds, use implicit wait like below:</p>
-<pre><code>//create WebDriver object for FireFox
-WebDriver driver=new FirefoxDriver();
-
-//Set Implicit wait for 30 second
-driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-
-//open URL
-driver.get(&quot;[http://www.seleniumpoint.com](http://www.seleniumpoint.com/)&quot;);
-
-//Perform further actions....
-driver.findElement(By.id(&quot;name&quot;)).sendKeys(&quot;any value&quot;);
-</code></pre><p>In the above example the implicit waits value is given as 30sec i.e, if web driver able to find the element with in the given span 30sec it immediately returns true and go to next step else it raises an exception after 30 seconds.  </p>
+<h4 id="1-Implicit-Wait"><a href="#1-Implicit-Wait" class="headerlink" title="1.Implicit Wait"></a>1.Implicit Wait</h4><p>It is used to set default wait time between two steps. For example, if you want to put wait for 30 seconds, use implicit wait like below:<br><figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">//create WebDriver object for FireFox</span></span><br><span class="line">WebDriver driver = <span class="hljs-keyword">new</span> FirefoxDriver();</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">//Set Implicit wait for 30 second</span></span><br><span class="line">driver.manage().timeouts().implicitlyWait(<span class="hljs-number">30</span>, TimeUnit.SECONDS);</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">//open URL</span></span><br><span class="line">driver.get(<span class="hljs-string">"https://www.seleniumpoint.com/"</span>);</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">//Perform further actions....</span></span><br><span class="line">driver.findElement(By.id(<span class="hljs-string">"name"</span>)).sendKeys(<span class="hljs-string">"any value"</span>);</span><br></pre></td></tr></table></figure></p>
+<p>In the above example the implicit waits value is given as 30sec i.e, if web driver able to find the element with in the given span 30sec it immediately returns true and go to next step else it raises an exception after 30 seconds.  </p>
 <p><strong>IMP:</strong>  Implicit waits will be in place for the entire time the browser is open. This means that any search for elements on the page could take the time the implicit wait is set for.</p>
 <h4 id="2-Explicit-Wait"><a href="#2-Explicit-Wait" class="headerlink" title="2.Explicit Wait"></a>2.Explicit Wait</h4><p>Explicit waits are used to pause the execution till the time a particular condition is occur or the maximum time has elapsed.Explicit waits are applied for a particular instance only.<br>WebDriver introduces classes like WebDriverWait and ExpectedConditions to enforce Explicit waits into the test scripts.<br>For example:<br>If you are writing a script for login to Gmail account, you will enter username , password and click on Sign In button.  <strong>Then wait till the Compose button appearing on next page. This is nothing but explicit wait.</strong>  </p>
-<p><strong>Selenium Script:</strong></p>
-<pre><code>        package scripts;
+<p><strong>Selenium Script:</strong><br><figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">package</span> scripts;</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">import</span> org.openqa.selenium.By;</span><br><span class="line"><span class="hljs-keyword">import</span> org.openqa.selenium.WebDriver;</span><br><span class="line"><span class="hljs-keyword">import</span> org.openqa.selenium.firefox.FirefoxDriver;</span><br><span class="line"><span class="hljs-keyword">import</span> org.openqa.selenium.support.ui.ExpectedConditions;</span><br><span class="line"><span class="hljs-keyword">import</span> org.openqa.selenium.support.ui.WebDriverWait;</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ExplicitWait</span> </span>&#123;</span><br><span class="line"></span><br><span class="line"> <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> InterruptedException </span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//set Gecko driver for FireFox browser</span></span><br><span class="line">  System.setProperty(<span class="hljs-string">"webdriver.gecko.driver"</span>, <span class="hljs-string">"C:\\harshal personal\\selenium\\geckodriver-v0.10.0-win64\\geckodriver.exe"</span>);</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//create WebDriver object for FireFox</span></span><br><span class="line">  WebDriver driver = <span class="hljs-keyword">new</span> FirefoxDriver();</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//open URL</span></span><br><span class="line">  driver.get(<span class="hljs-string">"https://www.gmail.com/"</span>);</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//enter username</span></span><br><span class="line">  driver.findElement(By.id(<span class="hljs-string">"Email"</span>)).sendKeys(<span class="hljs-string">"harshaljshewale@gmail.com"</span>);</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//click next</span></span><br><span class="line">  driver.findElement(By.id(<span class="hljs-string">"next"</span>)).click();</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//Explicit wait till SignIn Button visible</span></span><br><span class="line">  WebDriverWait wait = <span class="hljs-keyword">new</span> WebDriverWait(driver, <span class="hljs-number">30</span>);</span><br><span class="line">  wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.id(<span class="hljs-string">"signIn"</span>))));</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//enter password</span></span><br><span class="line">  driver.findElement(By.id(<span class="hljs-string">"Passwd"</span>)).sendKeys(<span class="hljs-string">"YourPwd@xyzcom"</span>);</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//click on Sign In button</span></span><br><span class="line">  driver.findElement(By.id(<span class="hljs-string">"signIn"</span>)).click();</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">//Explicit wait till Compose Button to be clickable</span></span><br><span class="line">  wait.until(ExpectedConditions.elementToBeClickable(By.xpath(<span class="hljs-string">"//div[@class='z0']"</span>)));</span><br><span class="line"></span><br><span class="line">  driver.findElement(By.xpath(<span class="hljs-string">"//div[@class='z0']"</span>)).click();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 
-        import org.openqa.selenium.By;
-        import org.openqa.selenium.WebDriver;
-        import org.openqa.selenium.firefox.FirefoxDriver;
-        import org.openqa.selenium.support.ui.ExpectedConditions;
-        import org.openqa.selenium.support.ui.WebDriverWait;
-
-        public class ExplicitWait {
-
-        public static void main(String[] args) throws InterruptedException {
-
-        //set Gecko driver for FireFox browser
-        System.setProperty(&quot;webdriver.gecko.driver&quot;,&quot;C:\\harshal personal\\selenium\\geckodriver-v0.10.0-win64\\geckodriver.exe&quot;);
-
-        //create WebDriver object for FireFox
-        WebDriver driver=new FirefoxDriver();
-
-        //open URL
-        driver.get(&quot;[https://www.gmail.com/](https://www.gmail.com/)&quot;);
-
-        //enter username
-        driver.findElement(By.id(&quot;Email&quot;)).sendKeys(&quot;01harshal.shewale@gmail.com&quot;);
-
-        //click next
-        driver.findElement(By.id(&quot;next&quot;)).click();
-
-        //Explicit wait till SignIn Button visible
-        WebDriverWait wait=new WebDriverWait(driver,30);
-        wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.id(&quot;signIn&quot;))));
-
-        //enter password
-        driver.findElement(By.id(&quot;Passwd&quot;)).sendKeys(&quot;Chlorodots@2014&quot;);
-
-        //click on Sign In button
-        driver.findElement(By.id(&quot;signIn&quot;)).click();
-
-        //Explicit wait till Compose Button to be clickable
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(&quot;//div[@class=&apos;z0&apos;]&quot;)));
-
-        driver.findElement(By.xpath(&quot;//div[@class=&apos;z0&apos;]&quot;)).click();
-
-
-    }
-
-}
-</code></pre>
         </div>
         
         
@@ -1221,7 +837,7 @@ driver.findElement(By.id(&quot;name&quot;)).sendKeys(&quot;any value&quot;);
                 <span class="level-item">Selenium</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">1</span>
+                <span class="level-item tag">15</span>
             </span>
         </a></li>
             </ul>
@@ -1252,7 +868,7 @@ driver.findElement(By.id(&quot;name&quot;)).sendKeys(&quot;any value&quot;);
         
         <article class="media">
             
-            <a href="/Setup-Firebug-Fire-Path-XPath-Checker/" class="media-left">
+            <a href="/install-firebug-firepath-xpathchecker-firefox-addons-for-selenium-new/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/images/thumbnail.svg" alt="Setup Firebug, Fire Path, XPath Checker">
                 </p>
@@ -1260,10 +876,10 @@ driver.findElement(By.id(&quot;name&quot;)).sendKeys(&quot;any value&quot;);
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T03:30:54.000Z">2019-04-23</time></div>
-                    <a href="/Setup-Firebug-Fire-Path-XPath-Checker/" class="has-link-black-ter is-size-6">Setup Firebug, Fire Path, XPath Checker</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T03:30:00.000Z">2019-04-23</time></div>
+                    <a href="/install-firebug-firepath-xpathchecker-firefox-addons-for-selenium-new/" class="has-link-black-ter is-size-6">Setup Firebug, Fire Path, XPath Checker</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/Selenium/">Selenium</a>
                     </p>
                 </div>
             </div>
@@ -1279,10 +895,10 @@ driver.findElement(By.id(&quot;name&quot;)).sendKeys(&quot;any value&quot;);
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T02:56:39.000Z">2019-04-23</time></div>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T02:56:00.000Z">2019-04-23</time></div>
                     <a href="/Get-Tooltip-Text-Using-Selenium-WebDriver/" class="has-link-black-ter is-size-6">Get Tooltip Text Using Selenium WebDriver</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/Selenium/">Selenium</a>
                     </p>
                 </div>
             </div>
@@ -1298,10 +914,10 @@ driver.findElement(By.id(&quot;name&quot;)).sendKeys(&quot;any value&quot;);
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T02:55:15.000Z">2019-04-23</time></div>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T02:55:00.000Z">2019-04-23</time></div>
                     <a href="/Print-Table-Data-Using-Selenium-WebDriver/" class="has-link-black-ter is-size-6">Print Table Data Using Selenium WebDriver</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/Selenium/">Selenium</a>
                     </p>
                 </div>
             </div>
@@ -1317,10 +933,10 @@ driver.findElement(By.id(&quot;name&quot;)).sendKeys(&quot;any value&quot;);
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T02:50:28.000Z">2019-04-23</time></div>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T02:50:00.000Z">2019-04-23</time></div>
                     <a href="/Print-All-Web-Page-Links-using-Selenium-WebDriver/" class="has-link-black-ter is-size-6">Print All Web Page Links using Selenium WebDriver</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/Selenium/">Selenium</a>
                     </p>
                 </div>
             </div>
@@ -1336,10 +952,10 @@ driver.findElement(By.id(&quot;name&quot;)).sendKeys(&quot;any value&quot;);
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T02:03:57.000Z">2019-04-23</time></div>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T02:03:00.000Z">2019-04-23</time></div>
                     <a href="/Alerts-Handling-using-Selenium-WebDriver/" class="has-link-black-ter is-size-6">Alerts Handling using Selenium WebDriver</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/Selenium/">Selenium</a>
                     </p>
                 </div>
             </div>
@@ -1384,7 +1000,7 @@ driver.findElement(By.id(&quot;name&quot;)).sendKeys(&quot;any value&quot;);
                 <div class="control">
                     <a class="tags has-addons" href="/tags/Selenium/">
                         <span class="tag">Selenium</span>
-                        <span class="tag is-grey">1</span>
+                        <span class="tag is-grey">15</span>
                     </a>
                 </div>
                 
@@ -1413,7 +1029,7 @@ driver.findElement(By.id(&quot;name&quot;)).sendKeys(&quot;any value&quot;);
         
         <article class="media">
             
-            <a href="/Setup-Firebug-Fire-Path-XPath-Checker/" class="media-left">
+            <a href="/install-firebug-firepath-xpathchecker-firefox-addons-for-selenium-new/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/images/thumbnail.svg" alt="Setup Firebug, Fire Path, XPath Checker">
                 </p>
@@ -1421,10 +1037,10 @@ driver.findElement(By.id(&quot;name&quot;)).sendKeys(&quot;any value&quot;);
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T03:30:54.000Z">2019-04-23</time></div>
-                    <a href="/Setup-Firebug-Fire-Path-XPath-Checker/" class="has-link-black-ter is-size-6">Setup Firebug, Fire Path, XPath Checker</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T03:30:00.000Z">2019-04-23</time></div>
+                    <a href="/install-firebug-firepath-xpathchecker-firefox-addons-for-selenium-new/" class="has-link-black-ter is-size-6">Setup Firebug, Fire Path, XPath Checker</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/Selenium/">Selenium</a>
                     </p>
                 </div>
             </div>
@@ -1440,10 +1056,10 @@ driver.findElement(By.id(&quot;name&quot;)).sendKeys(&quot;any value&quot;);
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T02:56:39.000Z">2019-04-23</time></div>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T02:56:00.000Z">2019-04-23</time></div>
                     <a href="/Get-Tooltip-Text-Using-Selenium-WebDriver/" class="has-link-black-ter is-size-6">Get Tooltip Text Using Selenium WebDriver</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/Selenium/">Selenium</a>
                     </p>
                 </div>
             </div>
@@ -1459,10 +1075,10 @@ driver.findElement(By.id(&quot;name&quot;)).sendKeys(&quot;any value&quot;);
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T02:55:15.000Z">2019-04-23</time></div>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T02:55:00.000Z">2019-04-23</time></div>
                     <a href="/Print-Table-Data-Using-Selenium-WebDriver/" class="has-link-black-ter is-size-6">Print Table Data Using Selenium WebDriver</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/Selenium/">Selenium</a>
                     </p>
                 </div>
             </div>
@@ -1478,10 +1094,10 @@ driver.findElement(By.id(&quot;name&quot;)).sendKeys(&quot;any value&quot;);
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T02:50:28.000Z">2019-04-23</time></div>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T02:50:00.000Z">2019-04-23</time></div>
                     <a href="/Print-All-Web-Page-Links-using-Selenium-WebDriver/" class="has-link-black-ter is-size-6">Print All Web Page Links using Selenium WebDriver</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/Selenium/">Selenium</a>
                     </p>
                 </div>
             </div>
@@ -1497,10 +1113,10 @@ driver.findElement(By.id(&quot;name&quot;)).sendKeys(&quot;any value&quot;);
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T02:03:57.000Z">2019-04-23</time></div>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T02:03:00.000Z">2019-04-23</time></div>
                     <a href="/Alerts-Handling-using-Selenium-WebDriver/" class="has-link-black-ter is-size-6">Alerts Handling using Selenium WebDriver</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/Selenium/">Selenium</a>
                     </p>
                 </div>
             </div>
@@ -1545,7 +1161,7 @@ driver.findElement(By.id(&quot;name&quot;)).sendKeys(&quot;any value&quot;);
                 <div class="control">
                     <a class="tags has-addons" href="/tags/Selenium/">
                         <span class="tag">Selenium</span>
-                        <span class="tag is-grey">1</span>
+                        <span class="tag is-grey">15</span>
                     </a>
                 </div>
                 
